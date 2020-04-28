@@ -57,4 +57,4 @@
 * _`-f`_ Dockerfile -t username/node]
 
  ## Flags do comando [docker rm]
-* _`-f -> Força a parada de um container que está sendo removido, porém estava em execução. Ex. [docker rm -f containerID]
+* _`-f`_ -> Força a parada de um container que está sendo removido, porém estava em execução. Ex. [docker rm -f containerID]
