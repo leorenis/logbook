@@ -4,7 +4,7 @@
 ##
     - ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.
 
-*Start Kafka* | Acesse o diretório com arquivos do kafka via terminal e execute: `bin/kafka-server-start.sh config/server.properties`
+*Start Kafka* | Acesse o diretório com arquivos do kafka via terminal e execute o comando: `bin/kafka-server-start.sh config/server.properties`
 
 * Create Kafka topics execute: `bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic ECOMMERCE_NEW_ORDER_EXEMPLE`
 
