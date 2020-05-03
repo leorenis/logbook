@@ -44,7 +44,7 @@ The *workspace* directory contains the following sub directories at its root:
 
 ## Commands
 The easiest way to run the above program is using the go run command 
-```$ go run hello.go```
+```$ go run app.go```
 
 ## Credits
 
