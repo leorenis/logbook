@@ -1,4 +1,5 @@
 # Golang technical features
 
 ## Variables
-In `Go` if you dont assign a value for a variable, the language set a possible `less` value to take on.
+- In `Go` if you dont assign a value for a variable, the language set a possible `less` value to take on.
+- All declared variable **must be used** in a go APP.
