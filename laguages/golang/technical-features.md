@@ -15,3 +15,11 @@ Instead:
 ```
 var personName string = "John Doe"
 ```
+
+Or simply omit **var** too. As long as `short assignment statement` is used. E.g.
+
+````
+personName := "John Doe"
+appVersion := 1.1
+age := 28
+````
