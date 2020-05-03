@@ -23,3 +23,6 @@ personName := "John Doe"
 appVersion := 1.1
 age := 28
 ````
+
+## Flux control
+`if` in *Golang* always expect a _`expression`_ with boolean return.
