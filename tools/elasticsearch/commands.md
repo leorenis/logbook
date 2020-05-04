@@ -143,6 +143,8 @@ You can configure a custom port for cerebro by using the CEREBRO_PORT environmen
 
 ### Example
 
+```
 docker run -e CEREBRO_PORT=8080 -p 8080:8080 lmenezes/cerebro
+```
 
 Project on [Docker Hub](https://hub.docker.com/r/lmenezes/cerebro/).
