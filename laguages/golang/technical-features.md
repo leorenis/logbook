@@ -25,4 +25,28 @@ age := 28
 ````
 
 ## Flux control
-`if` in *Golang* always expect a _`expression`_ with boolean return.
+- `if` in *Golang* always expect a _`expression`_ with boolean return.
+
+## Functions
+- Functions in `Go` can have multiples return values. E.g.
+
+````
+func getNameAndAge() (string, int) {
+    name := "John"
+    age := 26
+    return name, age
+````
+and call
+
+```
+name, age := getNameAndAge()
+fmt.Println("Name:", name, "age", age)
+
+```
+If you dont care about one of variables you can use `Blank Identifier (underscore)`. E.g
+
+```
+name, _ := getNameAndAge()
+fmt.Println("Name:", name)
+
+```
