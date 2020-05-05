@@ -104,9 +104,9 @@ docker-compose up
 
 3. Submit a _cat/nodes request to see that the nodes are up and running:
 
-````
+```
 curl -X GET "localhost:9200/_cat/nodes?v&pretty"
-````
+```
 
 Or use the cerebro.
 
@@ -120,7 +120,7 @@ cerebro is an open source(MIT License) elasticsearch web admin tool built using 
 - [Github project](https://github.com/lmenezes/cerebro)
 
 ### Requirements
-cerebro needs Java 1.8 or newer to run.
+- cerebro needs Java 1.8 or newer to run.
 
 ## Cerebro docker
 `cerebro-docker` contains the official docker files for cerebro project. Images are periodically uploaded in lmenezes/cerebro docker hub repo.
@@ -128,15 +128,15 @@ cerebro needs Java 1.8 or newer to run.
 ### Usage
 For using latest cerebro execute:
 
-
-````
+```
 docker run -p 9000:9000 lmenezes/cerebro
-````
+```
 
 For using a specific version run:
-````
+
+```
 docker run -p 9000:9000 lmenezes/cerebro:0.8.3
-````
+```
 
 Open the browser and access `http://localhost:9200/`. In the field: Node address put `http://172.17.0.2:9200`
 
