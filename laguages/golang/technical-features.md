@@ -61,6 +61,21 @@ func shouldEscape(c byte) bool {
 
 [See](https://golang.org/doc/effective_go.html#switch)
 
+## For 
+- The `for` loop is similar to—but not the same as—C's. It unifies for and while and there is no do-while. There are three forms, only one of which has semicolons.
+
+```
+// Like a C for
+for init; condition; post { }
+
+// Like a C while
+for condition { }
+
+// Like a C for(;;) or while(true) expressions
+for { }
+```
+For more details [See](https://github.com/leorenis/app-monitor-go/blob/master/app.go#L20).
+
 ## Functions
 - Functions in `Go` can have multiples return values. E.g.
 
