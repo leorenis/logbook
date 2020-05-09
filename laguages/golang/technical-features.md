@@ -99,3 +99,7 @@ name, _ := getNameAndAge()
 fmt.Println("Name:", name)
 
 ```
+
+## Source file time format
+
+[Time documentation](https://golang.org/src/time/format.go)
