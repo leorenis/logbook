@@ -2,7 +2,7 @@
 Start contaianer prometheus
 _`docker run  --name prometheus --rm -d -p 9090:9090 -v $HOME/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus`_
 
-E.g file prometheus.
+E.g file prometheus.yml
 
 ```
 global:
