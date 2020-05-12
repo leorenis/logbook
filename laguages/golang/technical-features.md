@@ -100,6 +100,35 @@ fmt.Println("Name:", name)
 
 ```
 
+### 
+
+Variadic functions can be called with any number of trailing arguments. For example, fmt.Println is a common variadic function.
+
+E.g.
+
+```
+func sum(nums ...int) {
+    fmt.Print(nums, " ")
+    total := 0
+    for _, num := range nums {
+        total += num
+    }
+    fmt.Println(total)
+}
+```
+
+We can call
+
+```
+sum(1, 3)
+sum(1, 2, 3)
+
+// or
+nums := []int{1, 2, 3, 4}
+sum(nums...)
+```
+[Go ahead](https://gobyexample.com/variadic-functions).
+
 ## Source file time format
 
 [Time documentation](https://golang.org/src/time/format.go)
