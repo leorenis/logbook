@@ -30,3 +30,50 @@ You use GET to retrieve a document and its source or stored fields from a partic
 curl -X GET "localhost:9200/twitter/_doc/0?pretty"
 ```
 
+- HTTP `PUT`
+Replace full `document` in a specific `URI`. The use of ID is mandatory. E.g.
+
+```
+curl -X PUT "localhost:9200/countersindex/_doc/1?pretty" -H 'Content-Type: application/json' -d'
+{
+    "counter" : 1,
+    "tags" : ["red"]
+}'
+```
+
+- HTTP `DELETE`
+
+Removes a JSON document from the specified index. E.g.
+```
+curl -X DELETE "localhost:9200/twitter/_doc/1?routing=kimchy&pretty"
+```
+[See Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete.html)
+
+- HTTP `POST`
+
+Use post when you want to `create` a new document or `_update` a existent documento.
+
+- Creating a new doc: 
+
+```
+curl -X POST "localhost:9200/test" -H 'Content-Type: application/json' -d'
+{
+    "doc" : {
+        "name" : "John Doe"
+    }
+}
+'
+```
+
+- _Update_ a existent doc: 
+Post allow to do partial update in a doc. The famous `_update`. E.g.
+
+```
+curl -X POST "localhost:9200/test/_update/1?pretty" -H 'Content-Type: application/json' -d'
+{
+    "doc" : {
+        "name" : "new_name"
+    }
+}
+'
+```
