@@ -77,3 +77,5 @@ curl -X POST "localhost:9200/test/_update/1?pretty" -H 'Content-Type: applicatio
 }
 '
 ```
+
+This was a CRUD using elastic search. [Read more in Document API elastic search](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html).
