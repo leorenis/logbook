@@ -31,7 +31,9 @@ curl -X GET "localhost:9200/twitter/_doc/0?pretty"
 ```
 
 - HTTP `PUT`
-Replace full `document` in a specific `URI`. The use of ID is mandatory. E.g.
+Replace full `document` in a specific `URI`. The use of **ID is mandatory**. 
+If you does not use PUT with ID. This exception happens: `No handler found for uri [//twitter/people/] and method [PUT]`.
+E.g.
 
 ```
 curl -X PUT "localhost:9200/countersindex/_doc/1?pretty" -H 'Content-Type: application/json' -d'
