@@ -12,6 +12,8 @@
 | Tuple               | Document      |
 | Column              | Atribute      |
 
+- Documents once created are imutables. A update change the document version [Docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html).
+
 ### Verbs HTTP allowed in ElasticSerch API REST:
 List of HTTP verbs availables on elastic: `HEAD`, `PUT`, `POST`, `GET` and `DELETE`.
 
