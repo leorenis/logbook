@@ -78,4 +78,8 @@ curl -X POST "localhost:9200/test/_update/1?pretty" -H 'Content-Type: applicatio
 '
 ```
 
+## Shards
+The shards are how the elasticsearch distributes the data volume. Is similar partitions in relational database. Remember: A **shard cannot to exceed 50GB**.
+
+
 This was a CRUD using elastic search. [Read more in Document API elastic search](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html).
