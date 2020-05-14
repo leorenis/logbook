@@ -112,7 +112,7 @@ If someone has already updated the document, the version will have been increase
 }
 ```
 
-## Field all
+## /_search?q=Field all
 Search in full index by term. E.g.
 
 ```
@@ -124,5 +124,12 @@ Its the same:
 ```
 GET /clubs/teams/_search?q=_all:futebol
 ```
+
+## /_search?q=Multiple_fields
+Search by brand and vehicle's model in `cars` index with limit of 10 vehicles..
+
+```
+ cars/_search?q=brand:honda&model:civic&size=10&from=10
+ ```
 
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
