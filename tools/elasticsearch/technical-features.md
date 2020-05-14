@@ -129,7 +129,7 @@ GET /clubs/teams/_search?q=_all:futebol
 Search by brand and vehicle's model in `cars` index with limit of 10 vehicles..
 
 ```
- cars/_search?q=brand:honda&model:civic&size=10&from=10
+ GET /cars/_search?q=brand:honda&model:civic&size=10&from=10
  ```
 
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
