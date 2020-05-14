@@ -103,5 +103,13 @@ PUT /twitter/people/1?version=1
     "name" : "new_name"
 }
 ```
+If someone has already updated the document, the version will have been increased to 2 and our request will fail. The `HTTP response code will be 409` Conflict and the error message will look something like:
+
+```
+{
+    "error" : "VersionConflictEngineException[[twitter][2] [people][1]: version conflict, current [2], provided [1]]",
+    "status" : 409
+}
+```
 
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
