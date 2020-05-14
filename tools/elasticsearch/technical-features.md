@@ -92,3 +92,16 @@ The shards are how the elasticsearch distributes the data volume. Is similar par
 - *Important* -> The number of shards must be defined when the index is created and cannot be changed. The number of replicas is also defined at the time the index is created, but can change over time. So, you should choose the number of shards well when creating the index.
 
 This was a CRUD using elastic search. [Read more in Document API elastic search](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html).
+
+## Optimistic Lock
+When using this mechanism, an update only occurs successfully when the version of the document in ElasticSearch is the same as the version of the document indicated in the request.
+E.g.
+
+```
+PUT /twitter/people/1?version=1
+{
+    "name" : "new_name"
+}
+```
+
+[Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
