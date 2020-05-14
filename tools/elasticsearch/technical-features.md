@@ -112,4 +112,17 @@ If someone has already updated the document, the version will have been increase
 }
 ```
 
+## Field all
+Search in full index by term. E.g.
+
+```
+GET /clubs/teams/_search?q=football
+{}
+```
+Its the same:
+
+```
+GET /clubs/teams/_search?q=_all:futebol
+```
+
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
