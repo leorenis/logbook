@@ -81,5 +81,10 @@ curl -X POST "localhost:9200/test/_update/1?pretty" -H 'Content-Type: applicatio
 ## Shards
 The shards are how the elasticsearch distributes the data volume. Is similar partitions in relational database. Remember: A **shard cannot to exceed 50GB**.
 
+- Primary shards -> Is the shard where the write operations as `create`, `delete` or `update` in a document happens first.
+
+- Replica shard -> Once the `write operation` have been successfuly finished in a primary shard, the `replica shard` receive the same operation to be replicated. The operation will only be confirmed for all clients when all replicas confirm replication. Therefore, when we receive HTTP OK for a write operation, we know that the information is secure in all replicas.
+
+- *Important* -> The number of shards must be defined when the index is created and cannot be changed. The number of replicas is also defined at the time the index is created, but can change over time. So, you should choose the number of shards well when creating the index.
 
 This was a CRUD using elastic search. [Read more in Document API elastic search](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs.html).
