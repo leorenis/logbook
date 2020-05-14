@@ -16,8 +16,8 @@
 
 * Alter partitions from topic execute: `bin/kafka-topics.sh --alter --zookeeper localhost:2181 --topic ECOMMERCE_NEW_ORDER --partitions 3`
 
-### 
-    Is not possible alter replication factor for existent topic.
+
+**Is not possible alter replication factor from existent topic. [Tips](https://github.com/leorenis/logbook/blob/master/tools/kafka/commands.md#tips)**
 
 * Producer kafka topic execute: `bin/kafka-console-producer.sh --broker-list localhost:9092 --topic ECOMMERCE_NEW_ORDER_EXEMPLE`
 
@@ -34,5 +34,6 @@
 
 ## 
     - Quando Aumentar o número de partitions pelo config/server.properties, lembre-se que o kafka irá aplicar somente aos novos tópicos. Caso queira aplicar para topicos existentes altere o tópico --alter. 
+    - Para alterar as configs acesse config/server.properties `default.replication.factor`, `num.partitions`, whatever property you want to update.
 
 Read more in [Kafka Docs](https://kafka.apache.org/documentation/).
