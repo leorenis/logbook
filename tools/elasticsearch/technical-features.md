@@ -132,4 +132,22 @@ Search by brand and vehicle's model in `cars` index with limit of 10 vehicles..
  GET /cars/_search?q=brand:honda&model:civic&size=10&from=10
  ```
 
+ To search within AND clause, use:
+
+ ```
+ GET /songs/country/_search?q=song+AND+brazil
+ ```
+
+ ## Analyzers
+ - Elasticsearch ships with a wide range of built-in analyzers, which can be used in any index without further configuration:
+ [Learn more about analyzer in a docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-analyzers.html)
+
+ ### API _analyze
+ - Search the tokens per analyzer:
+
+```
+GET /_analyze?analyzer=standard&text=I+am+a+yung+man+(just,+19+years+old)+a+millenium
+```
+
+
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).
