@@ -20,7 +20,6 @@
 * _`docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM`_ -> cria um container especificando seu nome e qual rede deverá ser usada.
 
 
-
 # Flags
 * _`-it`_ -> Executa um container em modo ‘iterativo’ com o terminal.
 
