@@ -13,7 +13,6 @@ docker pull taskrabbit/elasticsearch-dump
 ```
 
 Then you can use it just by :
-
 using docker run --rm -ti taskrabbit/elasticsearch-dump
 you'll need to mount your file storage dir `-v <your dumps dir>:<your mount point>` to your docker container
 Example:
