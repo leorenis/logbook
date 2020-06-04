@@ -34,7 +34,9 @@ $ (print-message)
 Practicing functions...
 
 ```
-(defn ninety-percent-discounted [amount]
+(defn ninety-percent-discounted
+  "Docs: Receive amount e returns 90%."
+  [amount]
   (* amount 0.9))
 ```
 
