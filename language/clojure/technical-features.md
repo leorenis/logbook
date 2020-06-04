@@ -34,13 +34,15 @@ $ (print-message)
 Practicing functions...
 
 ```
-(defn apply-ninety-percent-discount [amount]
+(defn ninety-percent-discounted [amount]
   (* amount 0.9))
 ```
 
 Call
 
-`(apply-ninety-percent-discount)`
+`(ninety-percent-discounted 100)`
+
+Return: `90.0`
 
 
 ## Legends
