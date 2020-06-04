@@ -46,6 +46,20 @@ The *workspace* directory contains the following sub directories at its root:
 The easiest way to run the above program is using the go run command 
 ```$ go run app.go```
 
+To compile some program to `run` later use the folow command: 
+
+```
+go build app.go
+```
+
+This command make a binary file compiled called `app` already be running. E.g.
+
+```
+$ ./app
+```
+
+
+
 ## Credits
 
 from callicoder.com | [Read more here](https://www.callicoder.com/golang-installation-setup-gopath-workspace/).
