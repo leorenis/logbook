@@ -34,15 +34,24 @@ $ (print-message)
 Practicing functions...
 
 ```
-(defn ninety-percent-discounted
+(defn ten-percent-discounted
   "Docs: Receive amount e returns 90%."
   [amount]
   (* amount 0.9))
 ```
 
+Or simply
+
+```
+(defn ten-percent-discounted
+  "Docs: Receive amount e returns 90%."
+  [amount]
+  (* amount (- 1 0.10)))
+```
+
 Call
 
-`(ninety-percent-discounted 100)`
+`(ten-percent-discounted 100)`
 
 Return: `90.0`
 
