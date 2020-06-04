@@ -26,4 +26,11 @@
   (println "Welcome to Storing."))
 ```
 
+Calling defined function: 
+```
+$ (print-message)
+```
 
+
+## Legends
+$ -> Indicates a terminal.
