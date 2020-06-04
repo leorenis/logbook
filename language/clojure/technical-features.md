@@ -31,6 +31,17 @@ Calling defined function:
 $ (print-message)
 ```
 
+Practicing functions...
+
+```
+(defn apply-ninety-percent-discount [amount]
+  (* amount 0.9))
+```
+
+Call
+
+`(apply-ninety-percent-discount)`
+
 
 ## Legends
 $ -> Indicates a terminal.
