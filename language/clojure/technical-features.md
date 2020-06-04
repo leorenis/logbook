@@ -6,7 +6,7 @@
 (println "Welcome to clojure.")
 ```
 
-* Variables definitions
+* Simbols definitions
 
 ```
 (def amount 15)
