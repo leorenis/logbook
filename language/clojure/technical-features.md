@@ -18,4 +18,12 @@
 (+ 13 3)
 ```
 
+* Function and params definition
+
+```
+(defn print-message []
+  (println "### SystemX ###")
+  (println "Welcome to Storing."))
+```
+
 
