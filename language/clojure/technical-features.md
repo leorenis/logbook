@@ -81,9 +81,10 @@ Or a little bit more clearly.
 (defn ten-percent-discounted
   "Returns the value with discount of 10%."
   [raw-value]
-  (let [discount (/ 10 100)]
-  (println "Calc discount... Tests")
-  (* raw-value (- 1 discount))))  ;; Return last instruction of function.
+  (let [discount-rate (/ 10 100)                        ;; Multiples declarations in let... 
+        discount      (* raw-value discount-rate)]
+  (println "Calc discount of " discount)
+  (- raw-value discount)))                              ;; Return last instruction of function.
 ```
 Call
 ```
