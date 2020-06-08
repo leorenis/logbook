@@ -69,8 +69,11 @@ Return: `90.0`
   (println "Calc discount... Tests")
   (* raw-value (- 1 discount))))  ;; Return last instruction of function.
 ```
+
+Function call
+```
 (ten-percent-discounted 100)
-``
+```
 
 Or a little bit more clearly.
 
@@ -82,7 +85,12 @@ Or a little bit more clearly.
   (println "Calc discount... Tests")
   (* raw-value (- 1 discount))))  ;; Return last instruction of function.
 ```
+Call
+```
 (ten-percent-discounted 1000)
-``
+```
+
+Discovering a class type in clojure `(class 90N)`. Return is `clojure.lang.BigInt`
+
 ## Legends
 $ -> Indicates a terminal.
