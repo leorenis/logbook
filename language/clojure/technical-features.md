@@ -61,6 +61,15 @@ Return: `90.0`
 ### let 
 - Receive a vector. `let` define a variable with local scope. E.g. `(let [discount 0.1]). discount is accessible only inside the function between parentesis.
 
+```
+(defn ten-percent-discounted
+  "Returns the value with discount of 10%."
+  [raw-value]
+  (let [discount 0.10]
+  (* raw-value (- 1 discount))))
+```
+(ten-percent-discounted 100)
+``
 
 ## Legends
 $ -> Indicates a terminal.
