@@ -55,6 +55,9 @@ Call
 
 Return: `90.0`
 
+## def 
+- Defines a `GLOBAL` symbol. Be carefull. You could use `let` instead.
+
 
 ## Legends
 $ -> Indicates a terminal.
