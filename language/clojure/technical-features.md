@@ -93,5 +93,21 @@ Call
 
 Discovering a class type in clojure `(class 90N)`. Return is `clojure.lang.BigInt`
 
+### if else in clojure
+
+Look: 
+
+```
+(if (> 500 100)
+  (println "Greater")
+  (println "Less or equals"))
+```
+
+```
+(if (> 50 100)
+  (println "Greater")
+  (println "Less or equals"))
+```
+
 ## Legends
 $ -> Indicates a terminal.
