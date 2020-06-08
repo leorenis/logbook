@@ -55,8 +55,11 @@ Call
 
 Return: `90.0`
 
-## def 
-- Defines a `GLOBAL` symbol. Be carefull. You could use `let` instead.
+### def 
+- Defines a `GLOBAL` symbol in a namespace. Be carefull. You could use `let` instead.
+
+### let 
+- Receive a vector. `let` define a variable with local scope. E.g. `(let [discount 0.1]). discount is accessible only inside the function between parentesis.
 
 
 ## Legends
