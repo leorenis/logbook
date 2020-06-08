@@ -66,7 +66,8 @@ Return: `90.0`
   "Returns the value with discount of 10%."
   [raw-value]
   (let [discount 0.10]
-  (* raw-value (- 1 discount))))
+  (println "Calc discount... Tests")
+  (* raw-value (- 1 discount))))  ;; Return last instruction of function.
 ```
 (ten-percent-discounted 100)
 ``
