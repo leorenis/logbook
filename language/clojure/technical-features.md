@@ -125,5 +125,6 @@ discount only value-rau greater than 100.
 Call
 `(ten-percent-discounted 1000)` **900N**
 `(ten-percent-discounted 100)` **100**
+
 ## Legends
 $ -> Indicates a terminal.

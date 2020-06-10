@@ -39,5 +39,15 @@ sudo ./linux-install-1.10.1.536.sh
 
 [repl.it](https://repl.it/languages/clojure) provides a browser-based Clojure repl for interactive exploration.
 
+
+## Open project on InteliJ
+
+1. Install the `cursive` plugin and restart the IDE. 
+2. Create a new `Clojure project`... OBS: Not java closure.
+3. `Click` with the right button on `project.cls` in the project root and select the option `Run 'REPL' for projectxx`.
+
+Take look at shortcuts  in `Edit` -> `Structural Editing` options.
+
+
 ## Credits
 [Read more](https://clojure.org/guides/getting_started).
