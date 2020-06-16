@@ -126,5 +126,27 @@ Call
 `(ten-percent-discounted 1000)` **900N**
 `(ten-percent-discounted 100)` **100**
 
+
+## Higher Order Functions
+
+### First Class Functions
+In functional programming, functions are first class citizens. This means functions can be treated as values. They can be assigned as values, passed into functions, and returned from functions.
+
+It’s common to see function definitions in Clojure using `defn` like `(defn foo …​)`. However, this is just syntactic sugar for `(def foo (fn …​))` `fn` returns a function object. `defn` returns a var which points to a function object.
+
+### Higher Order Functions
+
+A higher order function is a function that either:
+
+1. Takes one or more functions as arguments
+
+2. Returns a function as its result
+
+This is an important concept in functional programming in any language.
+
+Higher order functions allow us to compose functions. This means we can write small functions and combine them to create larger functions. Like putting a bunch of small LEGO bricks together to build a house.
+
+[See more](https://clojure.org/guides/higher_order_functions).
+
 ## Legends
 $ -> Indicates a terminal.
