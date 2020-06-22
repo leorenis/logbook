@@ -31,5 +31,9 @@ $ ps aux | ag bash
  - [Link Get Started ASDF](https://asdf-vm.com/#/core-manage-asdf-vm)
  - [Video Akita](https://youtu.be/epiyExCyb2s?t=2588)
 
+ ## Services
+
+ $ `sudo apt -y install postgresql-10 postgresql-contrib postgresql-server-dev-10 redis-server libhiredis-dev memcached libmemcached-dev`
+
  ### Devhints.io
  [Bash Scriptiong](https://devhints.io/bash)
