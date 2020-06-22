@@ -21,3 +21,6 @@ $ ps aux | ag bash
  Basic file permission
 
  $ `chmod +x test.txt`
+
+ ### Devhints.io
+ [Bash Scriptiong](https://devhints.io/bash)
