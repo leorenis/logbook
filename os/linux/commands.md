@@ -13,3 +13,7 @@ package to replace grep.
 ```
 $ ps aux | ag bash
  ```
+
+ List a specific colunm with command above
+
+ $ `ps aux | ag bash | awk '{print $2}'`
