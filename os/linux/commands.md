@@ -22,5 +22,9 @@ $ ps aux | ag bash
 
  $ `chmod +x test.txt`
 
+ ## Development environment
+
+ $ `sudo apt install build-essential libssl-dev exuberant-ctags ncurses-term ack-grep fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl default-jdk silversearcher-ag`
+
  ### Devhints.io
  [Bash Scriptiong](https://devhints.io/bash)
