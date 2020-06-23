@@ -78,6 +78,8 @@ Check package software properties common
 $ dpkg -L software-properties-common
 ```
 
+Install docker packages
+
 ```
 $ sudo apt update && sudo apt-get install docker-ce
 ```
