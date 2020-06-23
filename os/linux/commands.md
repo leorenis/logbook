@@ -35,5 +35,9 @@ $ ps aux | ag bash
 
  $ `sudo apt -y install postgresql-10 postgresql-contrib postgresql-server-dev-10 redis-server libhiredis-dev memcached libmemcached-dev`
 
+
+ ## Docker
+ [Video Akita](https://youtu.be/epiyExCyb2s?t=3254).
+
  ### Devhints.io
  [Bash Scriptiong](https://devhints.io/bash)
