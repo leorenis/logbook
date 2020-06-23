@@ -40,7 +40,7 @@ When should we use Cherry Picking?
 
 When you are working in an project where you are making changes in a branch called `some-features`. You have already made a few commits but want to move just one of them into the master branch.
 
-From `same-features` branch `run git log` --oneline  to get a better log of your commits history. Note that the commit hash is what we need to start the cherry picking. For example:
+From `same-features` branch run `git log --oneline` to get a better log of your commits history. Note that the commit hash is what we need to start the cherry picking. For example:
 
 ![alt git commands](https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2019-09/cherry-picking.png?itok=V9GZbHIt)
 
