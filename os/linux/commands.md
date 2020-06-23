@@ -37,7 +37,7 @@ $ ps aux | ag bash
 
 
  ## Docker
- [Video Akita](https://youtu.be/epiyExCyb2s?t=3254).
-
+- [Video Akita](https://youtu.be/epiyExCyb2s?t=3254).
+- [Docker Docs](https://docs.docker.com/engine/install/ubuntu/)
  ### Devhints.io
  [Bash Scriptiong](https://devhints.io/bash)
