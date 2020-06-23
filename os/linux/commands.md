@@ -72,8 +72,18 @@ $ sudo add-apt-repository \
    stable"
 ```
 
+Check package software properties common
+
 ```
 $ dpkg -L software-properties-common
+```
+
+```
+$ sudo apt update && sudo apt-get install docker-ce
+```
+
+```
+$ sudo usermod -aG docker $USER
 ```
 
  ### Devhints.io
