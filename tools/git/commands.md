@@ -69,7 +69,7 @@ In case you needed to cherry pick a merge instead of a commit, you can use:
 
 `git cherry-pick -m 1 <hash>`
 
-[Original Post](https://www.previousnext.com.au/blog/intro-cherry-picking-git). 
+Credit: [Original Post](https://www.previousnext.com.au/blog/intro-cherry-picking-git). Thanks @author.
 
 
 ### Credits
