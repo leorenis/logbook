@@ -8,7 +8,7 @@ E.g. Result Source elastic search. Extract 'codigo' atributte.
 
 ```
 {
-  "took": 163,
+  "took": 93,
   "timed_out": false,
   "_shards": {
     "total": 5,
@@ -17,16 +17,17 @@ E.g. Result Source elastic search. Extract 'codigo' atributte.
     "failed": 0
   },
   "hits": {
-    "total": 516,
+    "total": 1,
     "max_score": 0,
     "hits": [
       {
         "_index": "any-index-here",
         "_type": "any-type-here",
-        "_id": "10518739",
+        "_id": "15418739",
         "_score": 0,
         "_source": {
-          "codigo": 10518739
+          "codigo": 15418739,
+          "nome": "Jhon Doe" 
         }
       }
     ]
@@ -42,8 +43,11 @@ Result json path:
 
 ```
 [
-  10518739
+  15418739
 ]
 ```
 
+Takes only the codigo attribute.
+
+It's Great.
 
