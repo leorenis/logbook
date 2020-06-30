@@ -37,7 +37,7 @@ E.g. Result Source elastic search. Extract 'codigo' atributte.
 
 Type the follow command um input text field:
 
-`$ $.hits..hits[0:]._source.codigo `
+$ `$.hits.hits[0:]._source.codigo`
 
 Result json path:
 
