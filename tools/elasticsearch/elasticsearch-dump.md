@@ -1,4 +1,4 @@
-# elasticdump
+# Elasticdump
 - Import and export tools for elasticsearch
 
 - [Github Project](https://github.com/taskrabbit/elasticsearch-dump) - Thanks guys.
@@ -12,7 +12,7 @@ If you prefer using docker to use elasticdump, you can download this project fro
 docker pull taskrabbit/elasticsearch-dump
 ```
 
-Then you can use it just by :
+Then you can use it just by:
 using docker run --rm -ti taskrabbit/elasticsearch-dump
 you'll need to mount your file storage dir `-v <your dumps dir>:<your mount point>` to your docker container
 Example:
