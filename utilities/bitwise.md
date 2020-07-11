@@ -26,5 +26,5 @@ In binary: `0111 ^ 1010`
   1101 = 13
 ```
 
-*Properties:* The operation is commutative, associative and self-inverse.
+**Properties:** The operation is commutative, associative and self-inverse.
 It is also the same as addition modulo 2.
