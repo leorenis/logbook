@@ -93,4 +93,5 @@ All environment variables
 `set | less`
 
  ### Devhints.io
+ To read more about shell script.
  [Bash Scriptiong](https://devhints.io/bash)
