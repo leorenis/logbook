@@ -30,17 +30,17 @@
 
 * _`-i`_ -> Inicia um container em modo ‘iterativo’ com o terminal.
 
-* _`-P`_ -> Associa/Mapeia uma porta do container com uma porta aleatoriamente do Computador Local que está rodando o docker. Ex. [80/tcp -> 0.0.0.0:32769,443/tcp -> 0.0.0.0:32768]
+* _`-P`_ -> Associa/Mapeia uma porta do container com uma porta aleatoriamente do Computador Local que está rodando o docker. Ex. [80/tcp -> 0.0.0.0:32769,443/tcp -> 0.0.0.0:32768].
 
-* _`-p`_ -> Associa/Mapeia uma porta do container para uma porta específica. [docker run -d -p 123456:80 ]. Ex. [80/tcp -> 0.0.0.0:123456]
+* _`-p`_ -> Associa/Mapeia uma porta do container para uma porta específica. [docker run -d -p 123456:80 ]. Ex. [80/tcp -> 0.0.0.0:123456].
 
-* _`-t`_ -> Define to tempo em segundos para por exemplo executar junto ao comando [docker stop -t 0 containerID]
+* _`-t`_ -> Define to tempo em segundos para por exemplo executar junto ao comando [docker stop -t 0 containerID].
 
 * _`-e`_ -> Define variaveis de ambiente [docker run -d -P -e AUTHOR="JOHN DOE" imageXXX]
 
 * _`-v`_ -> Define um diretório que será utilizado para guardar Volume [docker run -v "/var/www" imageXXX]. Ou mapear entre o Docker HOST e o container.[docker run -it -v "/Users/username/Docker/Volumes:/var/www" ubuntu].
 
-* _`-w`_ -> Working Directory. Ensina ao container em qual diretório um comando deverá ser executado. Ex. [docker run -p 8080:3000 -d -v "/Users/username/Docker/Volumes:/var/www" -w "/var/www" node npm start ].
+* _`-w`_ -> Working Directory. Ensina ao container em qual diretório um comando deverá ser executado. Ex. [ docker run -p 8080:3000 -d -v "/Users/username/Docker/Volumes:/var/www" -w "/var/www" node npm start ].
 
 * _`--name`_ -> Pode ser atrelada ao comando [docker run --name nome-do-container imageXXX]. Serve para nomear um container
 
@@ -56,4 +56,4 @@
 * _`-f`_ Dockerfile -t username/node]
 
  ## Flags do comando [docker rm]
-* _`-f`_ -> Força a parada de um container que está sendo removido, porém estava em execução. Ex. [docker rm -f containerID]
+* _`-f`_ -> Força a parada de um container que está sendo removido, porém estava em execução. Ex. [docker rm -f containerID].
