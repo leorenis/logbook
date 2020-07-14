@@ -55,7 +55,7 @@ curl -X DELETE "localhost:9200/twitter/_doc/1?routing=kimchy&pretty"
 
 - HTTP `POST`
 
-Use post when you want to `create` a new document or `_update` a existent documento.
+Use post when you want to `create` a new document or `_update` an existent documento.
 
 - Creating a new doc: 
 
