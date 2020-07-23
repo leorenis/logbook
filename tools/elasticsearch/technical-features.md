@@ -149,5 +149,4 @@ Search by brand and vehicle's model in `cars` index with limit of 10 vehicles..
 GET /_analyze?analyzer=standard&text=I+am+a+yung+man+(just,+19+years+old)+a+millenium
 ```
 
-
 [Reference](https://www.elastic.co/guide/en/elasticsearch/reference/current/optimistic-concurrency-control.html).

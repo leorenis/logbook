@@ -141,6 +141,7 @@ docker run -p 9000:9000 lmenezes/cerebro:0.8.3
 Open the browser and access `http://localhost:9200/`. In the field: Node address put `http://172.17.0.2:9200`
 
 ### Configuration
+
 You can configure a custom port for cerebro by using the CEREBRO_PORT environment variable. This defaults to 9000.
 
 ### Example
