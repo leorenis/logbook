@@ -35,7 +35,6 @@ docker run --rm -ti -v /data:/tmp taskrabbit/elasticsearch-dump \
   --type=data
 ```
 
-
 ## Another exemple
 
 Creates a bash file:
@@ -67,6 +66,5 @@ docker run --rm taskrabbit/elasticsearch-dump \
   --type=data
 
 ```
-
 
 - [Read more in](https://github.com/taskrabbit/elasticsearch-dump). Its a great tool!
