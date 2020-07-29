@@ -12,9 +12,9 @@ Download binary file [here](win_amd64.zip).
 3. Set default configs of [kaf configs](https://github.com/birdayz/kaf/tree/master/examples). _Suggestion:_ Create a new file in `$HOME\.kaf\config` to define all configs.
 
 
-4. Run the command:
+4. Run command:
 ```
-kaf config $HOME\.kaf\config
+$ kaf config $HOME\.kaf\config
 ```
 
 **Note**: Replace $HOME to c:\Users\<youruser>\.kaf\...
