@@ -2,7 +2,7 @@
 
 This a way to use [kaf](https://github.com/birdayz/kaf) in windows/amd64 env.
 
-Get the binary [here](win_amd64.zip).
+Download binary file [here](win_amd64.zip).
 
 
 1. Extract the file `.zip` in a windows system files. _Suggestion:_ `$HOME\kafka\kaf`
