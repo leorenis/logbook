@@ -42,3 +42,22 @@ rew install kubectl
 ```
 
 
+
+### Install on Windows
+
+Run this command:
+
+```
+curl -Lo https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/windows/amd64/kubectl.exe
+```
+
+
+Or if you want use PSGallery:
+
+```
+ Install-Script -Name install-kubectl -Scope CurrentUser -Force    
+
+install-kubectl.ps1 [-DownloadLocation <path>]
+```
+
+[Read more](https://kubernetes.io/docs/tasks/tools/install-minikube).
