@@ -61,3 +61,5 @@ install-kubectl.ps1 [-DownloadLocation <path>]
 ```
 
 [Read more](https://kubernetes.io/docs/tasks/tools/install-minikube).
+
+Learn more in [Linux Tips](https://www.youtube.com/watch?v=pV0nkr61XP8).
