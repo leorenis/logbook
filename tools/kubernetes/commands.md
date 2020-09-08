@@ -60,6 +60,25 @@ Or if you want use PSGallery:
 install-kubectl.ps1 [-DownloadLocation <path>]
 ```
 
+
+
+### Option 1: Install VirtualBox from Ubuntu Repositories
+If you do not have the `virtual box` on you machine, so you must install. Follow the easiest way to install VirtualBox is by using the official Ubuntu repositories.
+
+1. Open a terminal, and enter the following:
+
+```
+sudo apt-get update
+sudo apt-get install virtualbox
+```
+
+2. Next, install the VirtualBox Extension Pack:
+
+```
+sudo apt-get install virtualbox—ext–pack
+```
+
+
 [Read more](https://kubernetes.io/docs/tasks/tools/install-minikube).
 
 Learn more on [Linux Tips](https://www.youtube.com/watch?v=pV0nkr61XP8).
