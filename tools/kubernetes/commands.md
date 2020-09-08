@@ -55,8 +55,7 @@ curl -Lo https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/wi
 Or if you want use PSGallery:
 
 ```
- Install-Script -Name install-kubectl -Scope CurrentUser -Force    
-
+Install-Script -Name install-kubectl -Scope CurrentUser -Force    
 install-kubectl.ps1 [-DownloadLocation <path>]
 ```
 
