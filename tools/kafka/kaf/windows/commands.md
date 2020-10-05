@@ -1,6 +1,6 @@
 # Windows setup
 
-This a way to use [kaf](https://github.com/birdayz/kaf) in windows/amd64 env.
+This is a easy way to use [kaf](https://github.com/birdayz/kaf) in windows/amd64 env.
 
 Download binary file [here](win_amd64.zip).
 
