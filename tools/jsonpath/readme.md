@@ -47,6 +47,8 @@ Result json path:
 ]
 ```
 
+[Docs](https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html)
+
 Takes only the codigo attribute.
 
 It's Great.
