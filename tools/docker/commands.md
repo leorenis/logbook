@@ -18,6 +18,7 @@
 * _`docker network create --driver bridge NOME_DA_REDE`_ -> Permite criar uma rede para comunicacao entre containers.
 * _`hostname -i`_ -> mostra o ip atribuído ao container pelo docker (funciona apenas dentro do container).
 * _`docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM`_ -> cria um container especificando seu nome e qual rede deverá ser usada.
+* _`docker exec -it --name [NOME_CONTAINER or ID] bash`_ -> executa um comando dentro do container em modo iterativo usanto o terminal tty, terminal padrao do container, executando o comando `bash`.
 
 
 # Flags
