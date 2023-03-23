@@ -2,7 +2,7 @@
 
 * _`docker ps`_ -> Lista todos os containers em execução.
 * _`docker ps -all`_ ->  Lista todos os containers, independente de estarem em execução ou não.
-* _`docker rm [containerID]`_ -> Remove o container com o ID XXX
+* _`docker rm [containerID]`_ -> Remove o container com o ID XXX. Com a flag `-force`, o comando vai parar e remover o container.
 * _`docker container prune`_ -> Remove todos os containers que não estão sendo executados.
 * _`docker images`_ -> Lista todas as images criadas
 * _`docker rmi [imageID]`_ -> Remove image com o ID XXX, Desde que esta não esteja sendo usada por algum container criado.
