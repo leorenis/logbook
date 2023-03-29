@@ -20,6 +20,7 @@
 * _`docker run -it --name NOME_CONTAINER --network NOME_DA_REDE NOME_IMAGEM`_ -> cria um container especificando seu nome e qual rede deverá ser usada.
 * _`docker exec -it --name [NOME_CONTAINER or ID] bash`_ -> executa um comando dentro do container em modo iterativo usanto o terminal tty, terminal padrao do container, executando o comando `bash`. Dica: O `docker run` cria um novo container e executa-o. O `docker exec` permite executar um comando em um container que já está em execução.
 * _`docker history [NOME_CONTAINER or ID]`_ -> lista todas as camadas para formar o container. [Leia mais](https://docs.docker.com/engine/reference/commandline/)
+* O docker dispõe por padrão de três redes: bridge, host e none. Redes bridges criadas manualmente permitem comunicação via hostname. A rede host remove o isolamento de rede entre o container e o host. A rede none remove a interface de rede do container.
 
 
 # Flags
