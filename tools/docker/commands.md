@@ -26,6 +26,7 @@
 
 * _`docker login `_ -> Executa login no docker hub.
 * _`docker tag leorenis/php72:0.0.1 leorenis/php72:0.0.1 `_ -> cria tag para image php72:0.0.1 do usuario leorenis no dockerHub.
+* _`docker push leorenis/php72:0.0.1`_ -> envia imagem ao dockerHub.
 
 # Flags
 * _`-it`_ -> Executa um container em modo ‘iterativo’ com o terminal.
