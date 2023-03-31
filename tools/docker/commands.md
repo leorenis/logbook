@@ -24,6 +24,9 @@
 * _`docker build -t leorenis/php82:0.0.1 .`_ -> A partir do Dockerfile será gerado uma imagem com a tag `leorenis/php82:0.0.1`, considerando o diretório atual.
 * _`docker run -it --name clinup -v ~/Code/PHP/projects/app-clinup:/var/www/html/app -p8000:8000 leorenis/php72:0.0.1 bash`_ -> Executa container nomeando para `myapp` em modo iterativo, mapeia o volume do app a partir da imagem `leorenis/php82` com terminal bash.
 
+* _`docker login `_ -> Executa login no docker hub.
+* _`docker tag leorenis/php72:0.0.1 leorenis/php72:0.0.1 `_ -> cria tag para image php72:0.0.1 do usuario leorenis no dockerHub.
+
 # Flags
 * _`-it`_ -> Executa um container em modo ‘iterativo’ com o terminal.
 
