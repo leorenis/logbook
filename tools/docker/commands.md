@@ -22,6 +22,7 @@
 * _`docker history [NOME_CONTAINER or ID]`_ -> lista todas as camadas para formar o container. [Leia mais](https://docs.docker.com/engine/reference/commandline/)
 * O docker dispõe por padrão de três redes: bridge, host e none. Redes bridges criadas manualmente permitem comunicação via hostname. A rede host remove o isolamento de rede entre o container e o host. A rede none remove a interface de rede do container.
 * _`docker build -t leorenis/php82:0.0.1 .`_ -> A partir do Dockerfile será gerado uma imagem com a tag `leorenis/php82:0.0.1`, considerando o diretório atual.
+* _`docker run -it --name clinup -v ~/Code/PHP/projects/app-clinup:/var/www/html/app -p8000:8000 leorenis/php72:0.0.1 bash`_ -> Executa container nomeando para `myapp` em modo iterativo, mapeia o volume do app a partir da imagem `leorenis/php82` com terminal bash.
 
 # Flags
 * _`-it`_ -> Executa um container em modo ‘iterativo’ com o terminal.
