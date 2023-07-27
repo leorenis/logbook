@@ -10,6 +10,7 @@
 * _`docker stop [containerID]`_ -> Encerra a execução de um container em estado EXECUTANDO.
 * _`docker port [containerID]`_ -> Lista as portas que estao mapeadas.
 * _`docker inspect`_ -> Inspeciona um container. Para ver os Mounts [Volumes montados] por exemplo.
+* _`docker logs -f [containerID]`_ display our container logs with the docker logs -f command
 * _`docker build`_ -> Serve para buildar uma imagem a partir de um Dockerfile.
 * _`docker login`_ -> inicia o processo de login no Docker Hub.
 * _`docker push`_ -> envia a imagem criada para o Docker Hub (hub.docker.com). Ex. [docker push username/node]
