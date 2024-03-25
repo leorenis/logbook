@@ -12,6 +12,9 @@
 - Each AZ (availability Zone) should have min 2 data centers for redundance;
 - Each AZ are situated in different places to avoid unavailability in catastrophes cenarios.
 
+[List of AWS Services Available by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/)
+
+
 ### AWS Points of Presence (Edge Locations)
 - Amazon has 400+ Points of Presence (400+ Edge Locations & 10+ Regional Caches) in 90+ cities across 40+ countries;
 
