@@ -2,9 +2,9 @@
 
 ### Regions
 
-- Compliance with data governance and legal requirements: data never leaves a region without yout explicit permission;
+- Compliance with data governance and legal requirements: data never leaves a region without your explicit permission;
 - Proximity to customers: reduce latency;
-- Available services: within a Region: new services and new features arent available in every Region;
+- Available services: within a Region: new services and new features aren't available in every Region;
 - Pricing: pricing varies region to region and is transparent in the service pricing page.
 
 ### AWS Availability Zones
