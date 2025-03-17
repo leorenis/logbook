@@ -42,6 +42,14 @@ The *workspace* directory contains the following sub directories at its root:
 - *bin*:  contains the binary executables.
 - *pkg*:  contains Go package archives.
 
+In the root project, create a `go.mod` file, e.g: 
+
+```
+module gosamples
+
+go 1.24.1
+```
+
 ## Commands
 The easiest way to run the above program is using the go run command 
 ```$ go run app.go```
@@ -57,7 +65,8 @@ This command make a binary file compiled called `app` already be running. E.g.
 ```
 $ ./app
 ```
-
+Using vscode, install the plugin: Go, created by Go Team at Google.
+The VS Code Go extension provides rich language support for the Go programming language.
 
 
 ## Credits
