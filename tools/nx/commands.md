@@ -1,0 +1,21 @@
+## Intro to Nx
+
+Nx is a powerful open-source build system that provides tools and techniques for enhancing developer productivity, optimizing CI performance, and maintaining code quality. Check out our video to learn more about what Nx is about.
+
+## Core Features
+- Run Tasks Efficiently: Nx runs tasks in parallel and orders the tasks based on the dependencies between them.
+- Distribute Tasks in CI: Nx scales your CI by distributing tasks across many VMs. Your CI is fast no matter how big your repository is.
+- Cache Locally & Remotely: With local and remote caching, Nx prevents unnecessary re-runs of tasks, saving you valuable dev time.
+- Split E2E Tests and Rerun Flaky Tests: Nx automatically splits large e2e tests to distribute them across VMs. Nx can also automatically identify and rerun flaky e2e tests.
+- Automate Dependency Updates: if you leverage Nx plugins you gain additional features such as code generation and tools to automatically upgrade your codebase and dependencies.
+- Make it Your Own: Nx is highly customizable and extensible. Fine-tune it by creating a plugin for your organization or creating a tooling plugin.
+- Find out more about why you should use Nx or browse our features.
+
+## Try Nx Yourself!
+
+```
+npx create-nx-workspace
+```
+
+### See more
+- https://nx.dev/getting-started/intro
