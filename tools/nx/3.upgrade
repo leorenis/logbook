@@ -1,0 +1,26 @@
+## Advanced update process
+This guide describes advanced scenarios when it comes to updating Nx and the workspaces dependencies. It starts with a summary of the standard update process and continues with those advanced use cases.
+
+https://nx.dev/features/automate-updating-dependencies
+
+```
+npx nx migrate latest
+```
+
+### How Does It Work?
+Nx knows where its configuration files are located and ensures they match the expected format. This automated update process, commonly referred to as "migration," becomes even more powerful when you leverage Nx plugins. Each plugin can provide migrations for its area of competency.
+
+For example, the Nx React plugin knows where to look for React and Nx specific configuration files and knows how to apply certain changes when updating to a given version of React.
+
+In the example below, the React plugin defines a migration script (./src/migrations/.../add-babel-core) that runs when upgrading to Nx 16.7.0-beta.2 (or higher).
+
+
+
+### See more
+- https://nx.dev/ai-chat
+- https://youtu.be/A0FjwsTlZ8A
+- https://nx.dev/features/automate-updating-dependencies
+- https://nx.dev/recipes/tips-n-tricks/advanced-update#updating-to-the-latest-nx-version
+
+
+
