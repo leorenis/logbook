@@ -1,104 +1,58 @@
 ## Using Operators RxJS
 
-### What changed?
+### Using `mergeMap`
 
-### Transformation of Functions into Observables:
+Pt-BR: `mergeMap` é útil quando você não precisa manter a ordem, e pode executar várias chamadas ao mesmo tempo.
 
-- The `getStudent()` function now returns an Observable with of(). This makes it easier to handle the data flow.
+En: RxJS's `mergeMap` operator is useful when you don't need to keep order, and when you want multiple operations to run in parallel.   
 
-- The `getSubject()` and `getCourses()` functions now use new Observable() to emit data, simulating asynchronous behavior, but with RxJS.
-
-### Chaining Observables with `switchMap`:
-
-- `switchMap` is used to chain the flow of Observables, ensuring that after each asynchronous call (like getSubject and getCourses), the next data is emitted in a continuous and reactive manner.
-
-- The `switchMap` operator is also used to ensure that the data flow is "canceled" if something changes. In other words, if a new value is emitted before completing a request, the previous request is canceled, and the most recent value is processed.
-
-### Reactive and Flexible Flow:
-
-- By using RxJS, the code becomes reactive and can easily be modified to add more operators or even new data flows.
-
-### 🚀 Advantages of RxJS:
-- Cancellation: When using switchMap, it cancels the previous request as soon as a new one is emitted, allowing for more efficient flow control.
-
-- Flow Composition: RxJS allows you to create more complex data flows with less code, handling asynchronous events in a smooth and fluent way.
-
-- Flexibility: If new data or events arise (like a new student), you can emit these events at any time, and the system will react accordingly.
+### How mergeMap works 
+- Applies a function to each item emitted by the source Observable
+- Merges the resulting Observables
+- Emits the results of the merger
+- Emits elements as they are ready
 
 ```
-npm install rxjs
-```
+const { of } = require('rxjs');
+const { delay, mergeMap } = require('rxjs/operators');
 
-```
-const { Observable, of } = require('rxjs');
-const { switchMap } = require('rxjs/operators');
-
-// Simulate async funtions using Observable
 function getStudent() {
-    return of({ id: 1, name: 'John Doe' }); // Retorna um Observable
+    return of({ id: 1, name: 'John Doe' }).pipe(delay(1000));
 }
 
 function getSubject(studentID) {
-    return of({
-        studentId: studentID,
-        subject: 'Functional programming'
-    }).pipe(
-        // Simulating a delay
-        switchMap(() => {
-            return new Observable(observer => {
-                setTimeout(() => {
-                    observer.next({ studentId: studentID, subject: 'Functional programming' });
-                    observer.complete();
-                }, 2000);
-            });
-        })
-    );
+    return of({ studentId: studentID, subject: 'Functional programming' }).pipe(delay(2000));
 }
 
 function getCourses(subject) {
-    return new Observable(observer => {
-        setTimeout(() => {
-            observer.next([
-                { name: 'Advanced JavaScript' },
-                { name: 'Streams in Node.js' }
-            ]);
-            observer.complete();
-        }, 3000);
-    });
+    return of([
+        { name: 'Advanced JavaScript' },
+        { name: 'Streams in Node.js' }
+    ]).pipe(delay(3000));
 }
 
-// Fluxo com RxJS
 getStudent().pipe(
-    switchMap(student => {
-        return getSubject(student.id).pipe(
-            switchMap(subject => getCourses(subject.subject).pipe(
-                // Atrasando o retorno até receber todos os dados
-                switchMap(courses => {
-                    return of({
-                        student,
-                        subject,
-                        courses
-                    });
-                })
-            ))
-        );
-    })
+    mergeMap(student =>
+        getSubject(student.id).pipe(
+            mergeMap(subject =>
+                getCourses(subject.subject).pipe(
+                    mergeMap(courses => of({ student, subject, courses }))
+                )
+            )
+        )
+    )
 ).subscribe({
     next: ({ student, subject, courses }) => {
         console.log(`
+[mergeMap]
 Student: ${student.name}
 Subject: ${subject.subject}
 Courses:
 - ${courses.map(c => c.name).join('\n- ')}`);
-    },
-    error: (err) => {
-        console.error('Error:', err);
     }
 });
 
-
 ```
-
 
 ### See more
 - https://egghead.io/q/rxjs
