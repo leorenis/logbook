@@ -13,7 +13,7 @@ npm install rxjs
 const { Subject } = require('rxjs');
 const { switchMap } = require('rxjs/operators');
 
-// Simulação das funções assíncronas
+// Simulate async funtions
 function getStudent() {
     return new Promise(resolve => {
         setTimeout(() => resolve({ id: 1, name: 'John Doe' }), 1000);
@@ -38,7 +38,7 @@ function getCourses(subject) {
     });
 }
 
-// Subject para iniciar o fluxo
+// Creates a subject to start flow 
 const studentSubject = new Subject();
 
 studentSubject.pipe(
