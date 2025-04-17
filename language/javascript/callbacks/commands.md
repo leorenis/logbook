@@ -19,7 +19,7 @@ function getSubject(studentId, callback) {
             sutdentId: studentId,
             subject: 'Functional programming'
         });
-    }, 1000);
+    }, 1500);
 }
 
 function getCourses(subject, callback) {
@@ -28,7 +28,7 @@ function getCourses(subject, callback) {
             { name: 'Advanced JavaScript' },
             { name: 'Streams in Node.js' }
         ]);
-    }, 1000);
+    }, 1200);
 }
 
 // Chaining functions using callbacks
