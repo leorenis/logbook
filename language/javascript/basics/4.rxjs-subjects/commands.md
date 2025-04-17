@@ -1,4 +1,4 @@
-## Observables RxJS
+## Subjects RxJS
 
 What changed?
 - We use a Subject as the entry point of our reactive flow.
