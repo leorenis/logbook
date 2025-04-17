@@ -1,86 +1,55 @@
 ## Observables RxJS
 
-### What changed?
-
-### Transformation of Functions into Observables:
-
-- The `getStudent()` function now returns an Observable with of(). This makes it easier to handle the data flow.
-
-- The `getSubject()` and `getCourses()` functions now use new Observable() to emit data, simulating asynchronous behavior, but with RxJS.
-
-### Chaining Observables with `switchMap`:
-
-- `switchMap` is used to chain the flow of Observables, ensuring that after each asynchronous call (like getSubject and getCourses), the next data is emitted in a continuous and reactive manner.
-
-- The `switchMap` operator is also used to ensure that the data flow is "canceled" if something changes. In other words, if a new value is emitted before completing a request, the previous request is canceled, and the most recent value is processed.
-
-### Reactive and Flexible Flow:
-
-- By using RxJS, the code becomes reactive and can easily be modified to add more operators or even new data flows.
-
-### 🚀 Advantages of RxJS:
-- Cancellation: When using switchMap, it cancels the previous request as soon as a new one is emitted, allowing for more efficient flow control.
-
-- Flow Composition: RxJS allows you to create more complex data flows with less code, handling asynchronous events in a smooth and fluent way.
-
-- Flexibility: If new data or events arise (like a new student), you can emit these events at any time, and the system will react accordingly.
+What changed?
+- We use a Subject as the entry point of our reactive flow.
+- With switchMap, we handle the chaining in a way similar to Promise.then, but in a reactive and cancelable manner.
+- The flow becomes flexible, and you can emit new students at any time and see the data flowing.
 
 ```
 npm install rxjs
 ```
 
 ```
-const { Observable, of } = require('rxjs');
+const { Subject } = require('rxjs');
 const { switchMap } = require('rxjs/operators');
 
-// Simulate async funtions using Observable
+// Simulate async funtions
 function getStudent() {
-    return of({ id: 1, name: 'John Doe' }); // Retorna um Observable
-}
-
-function getSubject(studentID) {
-    return of({
-        studentId: studentID,
-        subject: 'Functional programming'
-    }).pipe(
-        // Simulating a delay
-        switchMap(() => {
-            return new Observable(observer => {
-                setTimeout(() => {
-                    observer.next({ studentId: studentID, subject: 'Functional programming' });
-                    observer.complete();
-                }, 2000);
-            });
-        })
-    );
-}
-
-function getCourses(subject) {
-    return new Observable(observer => {
-        setTimeout(() => {
-            observer.next([
-                { name: 'Advanced JavaScript' },
-                { name: 'Streams in Node.js' }
-            ]);
-            observer.complete();
-        }, 3000);
+    return new Promise(resolve => {
+        setTimeout(() => resolve({ id: 1, name: 'John Doe' }), 1000);
     });
 }
 
-// Fluxo com RxJS
-getStudent().pipe(
+function getSubject(studentID) {
+    return new Promise(resolve => {
+        setTimeout(() => resolve({
+            studentId: studentID,
+            subject: 'Functional programming'
+        }), 2000);
+    });
+}
+
+function getCourses(subject) {
+    return new Promise(resolve => {
+        setTimeout(() => resolve([
+            { name: 'Advanced JavaScript' },
+            { name: 'Streams in Node.js' }
+        ]), 3000);
+    });
+}
+
+// Creates a subject to start flow 
+const studentSubject = new Subject();
+
+studentSubject.pipe(
     switchMap(student => {
-        return getSubject(student.id).pipe(
-            switchMap(subject => getCourses(subject.subject).pipe(
-                // Atrasando o retorno até receber todos os dados
-                switchMap(courses => {
-                    return of({
-                        student,
-                        subject,
-                        courses
-                    });
-                })
-            ))
+        return getSubject(student.id).then(subject =>
+            ({ student, subject })
+        );
+    }),
+    switchMap(({ student, subject }) => {
+        return getCourses(subject.subject).then(courses =>
+            ({ student, subject, courses })
         );
     })
 ).subscribe({
@@ -96,9 +65,10 @@ Courses:
     }
 });
 
+// Inicia o fluxo
+getStudent().then(student => studentSubject.next(student));
 
 ```
-
 
 ### See more
 - https://egghead.io/q/rxjs
