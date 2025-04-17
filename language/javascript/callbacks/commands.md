@@ -1,5 +1,11 @@
 ## Training callbacks
 
+What this code demonstrates:
+
+- How to work with nested callbacks (the infamous "callback hell").
+- How to pass data between asynchronous calls.
+- Simulates latency using setTimeout.
+
 ```
 function getStudent(callback) {
     setTimeout(() => {
