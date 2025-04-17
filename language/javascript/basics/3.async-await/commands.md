@@ -1,9 +1,9 @@
 ## Training Async Await
 
 What changed?
-- Each function now returns a Promise, which avoids the "pyramid effect" of callback hell.
-- With .then(), we chain the results in a clean and sequential way.
-- The .catch() at the end centralizes error handling.
+- The code looks synchronous, even though it's asynchronous, which makes it easier to read and maintain.
+- The try/catch block handles errors clearly and directly.
+- It avoids callback hell and even the overuse of .then().
 
 ```
 function getStudent() {
