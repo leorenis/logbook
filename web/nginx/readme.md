@@ -6,14 +6,14 @@ Nginx is a powerful, open-source web server, reverse proxy, load balancer, HTTP 
 
 ### Key Features and Use Cases:
 - *Web Server*: Nginx can directly serve web pages and applications. 
-*Reverse Proxy*: It can act as an intermediary between clients and backend servers, improving performance and security. 
-*Load Balancer*: Nginx can distribute traffic across multiple servers, ensuring high availability and performance. 
-*HTTP Cache*: It can cache frequently accessed web content, reducing load on backend servers and improving response times. 
-*Mail Proxy*: Nginx can handle SMTP, POP3, and IMAP traffic. 
-*NGINX Unit*: A lightweight application runtime for running web applications and APIs. 
-*NGINX Ingress Controller*: Connects Kubernetes applications and services. 
-*NGINX App Protect WAF*: Protects applications and APIs from web application attacks. 
-*NGINX Plus*: A commercial version with additional features and support. 
+- *Reverse Proxy*: It can act as an intermediary between clients and backend servers, improving performance and security. 
+- *Load Balancer*: Nginx can distribute traffic across multiple servers, ensuring high availability and performance. 
+- *HTTP Cache*: It can cache frequently accessed web content, reducing load on backend servers and improving response times. 
+- *Mail Proxy*: Nginx can handle SMTP, POP3, and IMAP traffic. 
+- *NGINX Unit*: A lightweight application runtime for running web applications and APIs. 
+- *NGINX Ingress Controller*: Connects Kubernetes applications and services. 
+- *NGINX App Protect WAF*: Protects applications and APIs from web application attacks. 
+- *NGINX Plus*: A commercial version with additional features and support. 
 
 
 ### See more
