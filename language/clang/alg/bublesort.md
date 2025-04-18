@@ -4,7 +4,7 @@ O Bubble sort é um algoritmo de ordenação que recebe uma lista de elementos c
 
 `Complexidade: O(n^2)`
 
-### Implementacao
+### Implementação
 ```c
 #include<stdio.h>
 #include<stdbool.h>
@@ -26,6 +26,7 @@ int main() {
         numbers[y+1] = bkp;
       }
     }
+    // Melhor caso, complexidade O(n)
     if(!changed) {
       break;
     }
