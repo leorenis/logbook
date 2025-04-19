@@ -5,3 +5,7 @@ Module Federation is an architectural pattern for the decentralization of JavaSc
 - Improve code maintainability
 - Lower the overall size of your applications
 - Enhance the performance of your applications
+
+### Practicing 
+
+Commit: [learn: config module federation loadRemote in runtime](https://github.com/leorenis/react-samples/commit/ed9ac53ad1095147a2836ad40059325eac79d955).
