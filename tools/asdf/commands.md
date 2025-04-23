@@ -45,6 +45,14 @@ List all for an especific provider
 asdf list all java adoptopenjdk
 ```
 
+```
+asdf list all java | grep -i lts | grep -iv jre
+```
+
+### Flags
+- _-i_ grep Case Insensitive; 
+- _-v_ grep Not Containing; 
+
 ### Plugins
 Plugins are how asdf knows to handle different tools like Node.js, Ruby, Elixir etc.
 
