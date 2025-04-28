@@ -59,17 +59,23 @@ git cherry-pick d467740 de906d4
 ```
 
 If the cherry picking gets halted because of conflicts, resolve them and
-```git cherry-pick --continue```
+```
+git cherry-pick --continue
+```
 
 If you want to bail of this step out altogether, just type:
-`git cherry-pick --abort`
+```
+git cherry-pick --abort
+```
 
 After all this is done, you can simply push the new commits to the upstream repo (e.g origin) and get on with your day.
 
 Tips n Tricks
 In case you needed to cherry pick a merge instead of a commit, you can use:
 
-`git cherry-pick -m 1 <hash>`
+```
+git cherry-pick -m 1 <hash>
+```
 
 Credit: [Original Post](https://www.previousnext.com.au/blog/intro-cherry-picking-git). Thanks the original @author.
 
