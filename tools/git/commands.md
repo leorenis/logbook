@@ -54,10 +54,12 @@ This will cherry pick the commit with hash `d467740` and add it as a new commit 
 
 If you want to cherry pick more than one commit in one go, you can add their commit IDs separated by a space:
 
-`git cherry-pick d467740 de906d4`
+```
+git cherry-pick d467740 de906d4
+```
 
 If the cherry picking gets halted because of conflicts, resolve them and
-`git cherry-pick --continue`
+```git cherry-pick --continue```
 
 If you want to bail of this step out altogether, just type:
 `git cherry-pick --abort`
