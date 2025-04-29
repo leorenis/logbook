@@ -34,15 +34,33 @@ To read about `git config credential.helper store`.
 
 ### Staging, Unstage and Stash Code
 
+#### Staging
+
 In Git, the term "stage" is often used interchangeably with "add". You can stage files in the terminal using the `git add` command. This command adds new or changed files in your working directory to the Git staging area, allowing you to choose what you are going to commit.
 
 To stage all changes in your repository, you can use `git add .` or `git add -A` to stage all files, including new, modified, and deleted files.
 
 For more granular control, you can use `git add -p` or` git add --patch` to stage parts of files interactively. This command will present you with chunks of changes and prompt you to choose which parts to stage.
 
+#### Unstage
 To unstage changes, you can use `git reset HEAD [filename]` to remove a file from the staging area without changing the working directory.
 
 You can also use `git status` to check the status of your repository and see which files are staged and which are not.
+
+#### Stash
+
+The `git stash` command is used to temporarily save changes in your working directory that are not yet ready to be committed. 
+This allows you to switch branches or perform other Git operations without committing changes that are not yet complete.
+
+To apply a stash to your working directory, use the `git stash apply` command. If you want to apply the stash and then remove it from the stash stack, use `git stash pop` instead. I Prefer `git stash pop`. 
+
+If you want to stash specific files or changes, you can use the `git stash push` command with options like `-m` for a message or `-p` to interactively choose which changes to stash.
+
+To delete a specific stash, use the `git stash drop` command followed by the stash identifier. To clear all stashes, use `git stash clear`.
+
+You can also list all stashes in your stash stack using the `git stash list` command.
+
+To view the contents of a stash, you can use the `git stash show` command. By default, it shows the changes in a summary format, but you can use the `-p` flag to see the changes in a patch format, or `-u` to include untracked files.
 
 ### Cherry Picking with Git
 
