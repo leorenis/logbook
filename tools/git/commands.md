@@ -82,6 +82,8 @@ You can also list all stashes in your stash stack using the `git stash list` com
 
 To view the contents of a stash, you can use the `git stash show` command. By default, it shows the changes in a summary format, but you can use the `-p` flag to see the changes in a patch format, or `-u` to include untracked files.
 
+To apply all stashes in Git, you cannot use a single command like `git stash apply all`.
+
 ### Cherry Picking with Git
 
 Sometimes you don't want to merge a whole branch into another, and only need to pick one or two specific commits. This process is called 'cherry picking'.
