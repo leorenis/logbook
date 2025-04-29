@@ -32,6 +32,12 @@ To read about `git config credential.helper store`.
 
 `vim ~/.git-credentials`
 
+### Staging, Unstage and Stash Code
+
+In Git, the term "stage" is often used interchangeably with "add". You can stage files in the terminal using the `git add` command. This command adds new or changed files in your working directory to the Git staging area, allowing you to choose what you are going to commit.
+
+To stage all changes in your repository, you can use `git add .` or `git add -A` to stage all files, including new, modified, and deleted files.
+
 ### Cherry Picking with Git
 
 Sometimes you don't want to merge a whole branch into another, and only need to pick one or two specific commits. This process is called 'cherry picking'.
