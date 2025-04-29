@@ -38,6 +38,12 @@ In Git, the term "stage" is often used interchangeably with "add". You can stage
 
 To stage all changes in your repository, you can use `git add .` or `git add -A` to stage all files, including new, modified, and deleted files.
 
+For more granular control, you can use `git add -p` or` git add --patch` to stage parts of files interactively. This command will present you with chunks of changes and prompt you to choose which parts to stage.
+
+To unstage changes, you can use `git reset HEAD [filename]` to remove a file from the staging area without changing the working directory.
+
+You can also use `git status` to check the status of your repository and see which files are staged and which are not.
+
 ### Cherry Picking with Git
 
 Sometimes you don't want to merge a whole branch into another, and only need to pick one or two specific commits. This process is called 'cherry picking'.
