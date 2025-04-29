@@ -32,6 +32,13 @@ To read about `git config credential.helper store`.
 
 `vim ~/.git-credentials`
 
+### Edit recent commit messages
+
+To edit the commit message of the most recent commit, you can use the git commit --amend command. This command allows you to modify the commit message without changing the commit's snapshot.
+```
+git commit --amend
+```
+
 ### Staging, Unstage and Stash Code
 
 #### Staging
