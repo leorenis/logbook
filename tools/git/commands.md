@@ -43,7 +43,20 @@ To stage all changes in your repository, you can use `git add .` or `git add -A`
 For more granular control, you can use `git add -p` or` git add --patch` to stage parts of files interactively. This command will present you with chunks of changes and prompt you to choose which parts to stage.
 
 #### Unstage
-To unstage changes, you can use `git reset HEAD [filename]` to remove a file from the staging area without changing the working directory.
+
+To unstage a specific file, you can use:
+
+```
+git restore --staged file-name
+```
+
+or 
+
+```
+git reset file-name
+```
+
+To unstage changes, you can use `git reset` to remove a file from the staging area without changing the working directory.
 
 You can also use `git status` to check the status of your repository and see which files are staged and which are not.
 
