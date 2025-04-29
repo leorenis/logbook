@@ -82,9 +82,8 @@ You can also list all stashes in your stash stack using the `git stash list` com
 
 To view the contents of a stash, you can use the `git stash show` command. By default, it shows the changes in a summary format, but you can use the `-p` flag to see the changes in a patch format, or `-u` to include untracked files.
 
-82
-
 Since version 2.11, it's pretty easy, you can use the `N` stack number instead of saying "stash@{n}". So now instead of using:
+
 ```
 git stash apply "stash@{n}"
 ```
@@ -104,6 +103,8 @@ while [ $(git stash list | wc -l) -gt 0 ]; do
 done
 
 ```
+
+*Tip*: To `git stash pop` or `git stash apply`, the working tree MUST be clean. E.g. When git status output: `nothing to commit, working tree clean`.
 
 ### Cherry Picking with Git
 
