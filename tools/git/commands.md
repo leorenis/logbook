@@ -151,6 +151,23 @@ git cherry-pick -m 1 <hash>
 Credit: [Original Post](https://www.previousnext.com.au/blog/intro-cherry-picking-git). Thanks the original @author.
 
 
+### Merge vs Rebase
+
+#### Merge
+Combines changes from one branch into another by creating a new "merge commit" that represents the integration of the two branches. This preserves the entire history of both branches, showing exactly when and how they were joined.
+
+#### Rebase
+Moves the entire branch to begin at the tip of another branch. This rewrites the project history by replaying the commits of the branch on top of the target branch, resulting in a linear history without merge commits.
+
+| Feature        | Merge                                                                 | Rebase                                                                 |
+|----------------|------------------------------------------------------------------------|------------------------------------------------------------------------|
+| History        | Preserves the entire history, including branches                      | Rewrites history, creating a linear sequence                          |
+| Commit Structure | Creates a merge commit                                                 | No merge commit                                                       |
+| Complexity     | Simpler to understand and use                                         | Can be more complex and requires care                                 |
+| Safety         | Safer, as it doesn't rewrite history                                  | Potentially dangerous if used improperly                              |
+| Use Cases      | Integrating long-lived feature branches, preserving history           | Cleaning up local feature branches, avoiding merge commits            |
+
+
 ### See more
 - [Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
 - [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
