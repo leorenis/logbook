@@ -151,7 +151,8 @@ git cherry-pick -m 1 <hash>
 Credit: [Original Post](https://www.previousnext.com.au/blog/intro-cherry-picking-git). Thanks the original @author.
 
 
-### Credits
-[Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
+### See more
+- [Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
+- [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 
