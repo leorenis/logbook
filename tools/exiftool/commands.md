@@ -6,6 +6,12 @@ ExifTool is a platform-independent Perl library plus a command-line application 
 exiftool -all= DSCN029.jpg
 ```
 
+To override original file.
+```
+exiftool -all= -overwrite_original DSCN029.jpg
+```
+
+
 ### See more
 - [Online docs](https://exiftool.org/)
 - [FAQ](https://exiftool.org/faq.html)
