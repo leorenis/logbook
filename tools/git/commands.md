@@ -113,7 +113,7 @@ When you are working in an project where you are making changes in a branch call
 
 From `same-features` branch run `git log --oneline` to get a better log of your commits history. Note that the commit hash is what we need to start the cherry picking. For example:
 
-![alt git commands](https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2019-09/cherry-picking.png?itok=V9GZbHIt)
+[Alt git commands](https://www.previousnext.com.au/sites/default/files/styles/content_1x/public/2019-09/cherry-picking.png?itok=V9GZbHIt)
 
 Checkout the branch where you want to cherry pick the specific commits. In this case master branch:
 git checkout master
