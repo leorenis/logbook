@@ -156,6 +156,8 @@ Credit: [Original Post](https://www.previousnext.com.au/blog/intro-cherry-pickin
 #### Merge
 Combines changes from one branch into another by creating a new "merge commit" that represents the integration of the two branches. This preserves the entire history of both branches, showing exactly when and how they were joined.
 
+Examples:
+
 #### Rebase
 Moves the entire branch to begin at the tip of another branch. This rewrites the project history by replaying the commits of the branch on top of the target branch, resulting in a linear history without merge commits.
 
@@ -167,6 +169,29 @@ Moves the entire branch to begin at the tip of another branch. This rewrites the
 | Safety         | Safer, as it doesn't rewrite history                                  | Potentially dangerous if used improperly                              |
 | Use Cases      | Integrating long-lived feature branches, preserving history           | Cleaning up local feature branches, avoiding merge commits            |
 
+
+Examples:
+
+```
+# update a branch main
+git checkout main
+git pull origin main
+
+# Rebase a branch feature/rebase na main
+git checkout feature/rebase
+git rebase main
+
+# Force o push to remote repo (if needed)
+git push origin feature/rebase --force
+
+# merge fast-forward (try to apply without commit merge if there is not conflict)
+git checkout main
+git merge --ff-only feature/rebase
+
+# send changes to remote
+git push origin main
+
+```
 
 ### See more
 - [Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
