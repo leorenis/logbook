@@ -158,6 +158,25 @@ Combines changes from one branch into another by creating a new "merge commit" t
 
 Examples:
 
+```
+git checkout main
+git pull origin main
+
+git merge feature/tomerge
+
+git push
+```
+Or
+
+```
+git checkout feature/tomerge
+git pull origin main
+# solve conficts
+git commit -m '[Fix] conflicts'
+git pull
+git push
+```
+
 #### Rebase
 Moves the entire branch to begin at the tip of another branch. This rewrites the project history by replaying the commits of the branch on top of the target branch, resulting in a linear history without merge commits.
 
