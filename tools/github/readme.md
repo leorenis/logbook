@@ -56,3 +56,18 @@ branches:
       teams:
         - @maintainers
 ```
+
+4. PR (Pull Request) Templates in GitHub
+
+PR templates help ensure that contributors provide necessary information, follow coding standards, and adhere to the repository's guidelines. They also save time for maintainers by providing a structured format for reviewing and evaluating pull requests.
+
+Here's a brief overview of how PR templates work in GitHub:
+
+1. Create a template: Repository administrators can create a template by adding a .github/PULL_REQUEST_TEMPLATE.md file to the repository.
+
+2. Select a template: When creating a new pull request, users can select the pre-defined template from the repository.
+
+3. Fill out the template: The selected template is used as a starting point for the pull request description, and the contributor can fill out the required information.
+
+
+[See a template sample file](https://github.com/leorenis/swift-samples/blob/main/.github/pull_request_template.md)
