@@ -19,3 +19,40 @@ It's usually protected, meaning that only certain users or teams can make change
 ### Configuring Rules in a GitHub Repository
 
 To configure rules in a GitHub repository, you can use GitHub's built-in features such as Branch Protection, Code Owners, and Repository Settings.
+
+
+1. Branch Protection
+
+Go to your repository's Settings > Branches.
+
+Click on Add rule to create a new branch protection rule.
+Configure the rule to specify which branches to protect, who can push to those branches, and what conditions must be met before a push is allowed.
+
+
+2. Code Owners
+
+Go to your repository's Settings > Code and conduct > Code owners.
+Click on Add a code owner to specify which files or folders are owned by specific users or teams.
+Configure the code ownership to specify who is responsible for reviewing changes to those files.
+
+[See codeowners sample file](https://github.com/leorenis/swift-samples/blob/main/.github/CODEOWNERS)
+
+
+3. Repository Settings
+
+Go to your repository's Settings > Repository settings.
+Configure settings such as Merge checks, Status checks, and Required status checks to specify which conditions must be met before a pull request can be merged.
+Here's an example of how you might configure a branch protection rule:
+
+```yaml
+# .github/branch.yml
+branches:
+  main:
+    required_status_checks:
+      strict: true
+    restrictions:
+      users:
+        - @owner
+      teams:
+        - @maintainers
+```
