@@ -61,3 +61,4 @@ Kotlin version 1.9.0-release-<build-info>
 - https://kotlinlang.org/docs/getting-started.html
 - https://ktor.io/docs/welcome.html
 - https://spring.io/guides/tutorials/spring-boot-kotlin
+- https://github.com/leorenis/kt-samples
