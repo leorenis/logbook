@@ -27,6 +27,7 @@ inurl:group_concat(username) filetype:php intext:admin
 ```
 > Find vulnerable PHP pages that might be susceptible to SQL injection involving group_concat
 
+And more...
 ```
 intext:@gmail.com filetype:xls
 
