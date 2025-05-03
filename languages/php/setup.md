@@ -32,5 +32,16 @@ asdf global php latest
 php -v
 ```
 
+This should print the PHP version and confirm it's correctly set up.
+
+asdf handles versioning per project too. Inside a project directory, you can run:
+
+```bash
+asdf local php 8.2.12
+
+```
+This makes sure your project always uses the right PHP version.
+
+
 ### See more
 - https://github.com/leorenis/php-samples
