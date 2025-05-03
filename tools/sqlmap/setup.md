@@ -43,7 +43,13 @@ sqlmap -u http://127.0.0.1 --forms --tamper=space2comment --tables
 - **`--tables`**  
   After confirming SQL injection, it enumerates the database tables.
 
-  
+
 ### See more
 - https://sqlmap.org
 - https://github.com/sqlmapproject/sqlmap
+- https://github.com/sqlmapproject/sqlmap/issues
+- https://github.com/sqlmapproject/sqlmap/wiki
+- https://github.com/sqlmapproject/sqlmap/wiki/FAQ
+- X: @sqlmap
+- Demos: https://www.youtube.com/user/inquisb/videos
+- https://github.com/sqlmapproject/sqlmap/wiki/Screenshots
