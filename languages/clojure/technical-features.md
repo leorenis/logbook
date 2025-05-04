@@ -2,38 +2,38 @@
 
 * Function's call
 
-```
+```clj
 (println "Welcome to clojure.")
 ```
 
 * Simbols definitions
 
-```
+```clj
 (def amount 15)
 ```
 
 * Sum values
 
-```
+```clj
 (+ 13 3)
 ```
 
 * Function and params definition
 
-```
+```clj
 (defn print-message []
   (println "### SystemX ###")
   (println "Welcome to Storing."))
 ```
 
 Calling defined function: 
-```
+```clj
 $ (print-message)
 ```
 
 Practicing functions...
 
-```
+```clj
 (defn ten-percent-discounted
   "Docs: Receive amount e returns 90%."
   [amount]
@@ -42,7 +42,7 @@ Practicing functions...
 
 Or simply
 
-```
+```clj
 (defn ten-percent-discounted
   "Docs: Receive amount e returns 90%."
   [amount]
@@ -51,7 +51,9 @@ Or simply
 
 Call
 
-`(ten-percent-discounted 100)`
+```clj
+(ten-percent-discounted 100)
+```
 
 Return: `90.0`
 
@@ -61,7 +63,7 @@ Return: `90.0`
 ### let 
 - Receive a vector. `let` define a variable with local scope. E.g. `(let [discount 0.1]). discount is accessible only inside the function between parentesis.
 
-```
+```clj
 (defn ten-percent-discounted
   "Returns the value with discount of 10%."
   [raw-value]
@@ -71,13 +73,13 @@ Return: `90.0`
 ```
 
 Function call
-```
+```clj
 (ten-percent-discounted 100)
 ```
 
 Or a little bit more clearly.
 
-```
+```clj
 (defn ten-percent-discounted
   "Returns the value with discount of 10%."
   [raw-value]
@@ -87,7 +89,7 @@ Or a little bit more clearly.
   (- raw-value discount)))                              ;; Return last instruction of function.
 ```
 Call
-```
+```clj
 (ten-percent-discounted 1000)
 ```
 
@@ -97,13 +99,13 @@ Discovering a class type in clojure `(class 90N)`. Return is `clojure.lang.BigIn
 
 Look: 
 
-```
+```clj
 (if (> 500 100)
   (println "Greater")
   (println "Less or equals"))
 ```
 
-```
+```clj
 (if (> 50 100)
   (println "Greater")
   (println "Less or equals"))
@@ -111,7 +113,7 @@ Look:
 
 discount only value-rau greater than 100.
 
-```
+```clj
 (defn ten-percent-discounted
   "Returns the value with discount of 10% when raw value greater than 100."
   [raw-value]
