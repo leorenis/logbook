@@ -213,5 +213,7 @@ git push origin main
 ### See more
 - [Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
 - [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- [How to use Git Flow and Become a Git Professional](https://www.youtube.com/watch?v=mZzmaC0pn1c)
 
 
