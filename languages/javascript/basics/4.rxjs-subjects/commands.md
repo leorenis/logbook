@@ -5,11 +5,11 @@ What changed?
 - With switchMap, we handle the chaining in a way similar to Promise.then, but in a reactive and cancelable manner.
 - The flow becomes flexible, and you can emit new students at any time and see the data flowing.
 
-```
+```bash
 npm install rxjs
 ```
 
-```
+```javascript
 const { Subject } = require('rxjs');
 const { switchMap } = require('rxjs/operators');
 

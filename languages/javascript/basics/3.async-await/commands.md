@@ -5,7 +5,7 @@ What changed?
 - The try/catch block handles errors clearly and directly.
 - It avoids callback hell and even the overuse of .then().
 
-```
+```javascript
 function getStudent() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
