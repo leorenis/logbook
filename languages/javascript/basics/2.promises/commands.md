@@ -5,7 +5,7 @@ What changed?
 - With .then(), we chain the results in a clean and sequential way.
 - The .catch() at the end centralizes error handling.
 
-```
+```javascript
 function getStudent() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {

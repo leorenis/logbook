@@ -6,7 +6,7 @@ What this code demonstrates:
 - How to pass data between asynchronous calls.
 - Simulates latency using setTimeout.
 
-```
+```javascript
 function getStudent(callback) {
     setTimeout(() => {
         return callback(null, { id: 1, name: 'John Doe' });
