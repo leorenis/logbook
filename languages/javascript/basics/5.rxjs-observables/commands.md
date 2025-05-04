@@ -25,11 +25,11 @@
 
 - Flexibility: If new data or events arise (like a new student), you can emit these events at any time, and the system will react accordingly.
 
-```
+```bash
 npm install rxjs
 ```
 
-```
+```javascript
 const { Observable, of } = require('rxjs');
 const { switchMap } = require('rxjs/operators');
 
@@ -95,7 +95,6 @@ Courses:
         console.error('Error:', err);
     }
 });
-
 
 ```
 
