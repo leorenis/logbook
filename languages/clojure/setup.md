@@ -14,7 +14,7 @@ Install the command line tools with brew from the clojure/tools tap:
 ### brew install clojure/tools/clojure
 If you’ve already installed, you can upgrade to the latest release with:
 
-```
+```bash
 brew upgrade clojure/tools/clojure
 ```
 
@@ -29,7 +29,7 @@ Ensure that the following dependencies are installed: bash, curl, rlwrap, and Ja
 
 Use the linux-install script to download and run the install, which will create /usr/local/bin/clj, /usr/local/bin/clojure, and /usr/local/lib/clojure:
 
-```
+```bash
 curl -O https://download.clojure.org/install/linux-install-1.10.1.536.sh
 chmod +x linux-install-1.10.1.536.sh
 sudo ./linux-install-1.10.1.536.sh
