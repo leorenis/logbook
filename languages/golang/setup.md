@@ -8,16 +8,22 @@ Go binary distributions are available for all major operating systems like Linux
 
 ### Mac OS X
 The easiest way to install Go in Mac OS is by using [Homebrew](https://brew.sh/)
-```brew install go```
+```bash
+brew install go
+```
 
 ### Linux OS
 Download the Linux distribution from [Go’s official download page](https://golang.org/dl/) and extract it into /usr/local directory.
 
-```sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz```
+```bash
+sudo tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+```
 
 Next, add the /usr/local/go/bin directory to your PATH environment variable. You can do this by adding the following line to your _`~/.bash_profile file`_.
 
-```export PATH=$PATH:/usr/local/go/bin```
+```bash
+export PATH=$PATH:/usr/local/go/bin
+```
 
 You can also use any other directory like `/opt/go` instead of `/usr/local` for installing Go.
 
@@ -29,11 +35,15 @@ If you want to use a custom location as your workspace, you can set the `GOPATH`
 ### Unix Systems (Linux and macOS)
 For setting GOPATH in bash shells, add the following line to the `~/.bash_profile` file. If you use Zsh shell, then you need to add the above line to `~/.zshrc` file.
 
-```export GOPATH=$HOME/go```
+```bash
+export GOPATH=$HOME/go
+```
 
 In my personal case, I'm using:
 
-```export GOPATH=$HOME/Code/go```
+```bash
+export GOPATH=$HOME/Code/go
+```
 
 ## Go Workspace
 The *workspace* directory contains the following sub directories at its root:
@@ -52,18 +62,20 @@ go 1.24.1
 
 ## Commands
 The easiest way to run the above program is using the go run command 
-```$ go run app.go```
+```bash
+go run app.go
+```
 
 To compile some program to `run` later use the folow command: 
 
-```
+```bash
 go build app.go
 ```
 
 This command make a binary file compiled called `app` already be running. E.g.
 
-```
-$ ./app
+```zsh
+./app
 ```
 Using vscode, install the plugin: Go, created by Go Team at Google.
 The VS Code Go extension provides rich language support for the Go programming language.
