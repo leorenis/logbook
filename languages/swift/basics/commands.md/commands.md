@@ -41,7 +41,7 @@ let myThirdNumber: CGFloat = 1.0
 
 Tuples
 
-```
+```swift
 import Foundation
 
 var userName: String = "Hello"
@@ -103,4 +103,6 @@ doSomethingWithUserInfo(info: info)
 ```
 
 #### See more in
-https://github.com/leorenis/swift-samples/tree/main/SwifthinkingBasics.playground/Pages
+- [Swift Playground](https://github.com/leorenis/swift-samples/tree/main/SwifthinkingBasics.playground/Pages)
+- [SwiftUI Bootcamp](https://github.com/leorenis/swift-samples/tree/main/SwiftUIThinkingBootcamp/SwiftUIThinkingBootcamp)
+- [MVVM TODO List](https://github.com/leorenis/swift-samples/tree/main/TodoList/TodoList)
