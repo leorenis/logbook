@@ -2,7 +2,7 @@
 
 ## Headers
 
-```
+```c
 #include<stdio.h>   // for input/output functions like printf, scanf
 #include<stdbool.h> // for using bool, true, false
 ```
@@ -17,7 +17,7 @@ This line *includes the Standard Input/Output library.*
 
 
 
-```
+```c
 #include <stdbool.h>
 ```
 
