@@ -64,7 +64,7 @@ func shouldEscape(c byte) bool {
 ## For 
 - The `for` loop is similar to—but not the same as—C's. It unifies for and while and there is no do-while. There are three forms, only one of which has semicolons.
 
-```
+```go
 // Like a C for
 for init; condition; post { }
 
@@ -79,19 +79,19 @@ For more details [See](https://github.com/leorenis/app-monitor-go/blob/master/ap
 ## Functions
 - Functions in `Go` can have multiples return values. E.g.
 
-````
+```go
 func getNameAndAge() (string, int) {
     name := "John"
     age := 26
     return name, age
-````
+```
 and call
 
-```
+```go
 name, age := getNameAndAge()
 fmt.Println("Name:", name, "age", age)
-
 ```
+
 If you dont care about one of variables you can use `Blank Identifier (underscore)`. E.g
 
 ```
