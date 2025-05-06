@@ -94,7 +94,7 @@ fmt.Println("Name:", name, "age", age)
 
 If you dont care about one of variables you can use `Blank Identifier (underscore)`. E.g
 
-```
+```go
 name, _ := getNameAndAge()
 fmt.Println("Name:", name)
 
@@ -106,7 +106,7 @@ Variadic functions can be called with any number of trailing arguments. For exam
 
 E.g.
 
-```
+```go
 func sum(nums ...int) {
     fmt.Print(nums, " ")
     total := 0
@@ -119,7 +119,7 @@ func sum(nums ...int) {
 
 We can call
 
-```
+```go
 sum(1, 3)
 sum(1, 2, 3)
 
@@ -132,3 +132,6 @@ sum(nums...)
 ## Source file time format
 
 [Time documentation](https://golang.org/src/time/format.go)
+
+### See more
+- [A Tour of Go](https://go.dev/tour/flowcontrol/9)
