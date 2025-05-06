@@ -33,7 +33,7 @@ if response.StatusCode == 200 {
 ```
 - switch in *Golang* is more general than C's. The expressions need not be constants or even integers, the cases are evaluated top to bottom until a match is found, and if the switch has no expression it switches on true. It's therefore possible—and idiomatic—to write an if-else-if-else chain as a switch.
 
-```
+```go
 func unhex(c byte) byte {
     switch {
     case '0' <= c && c <= '9':
@@ -49,7 +49,7 @@ func unhex(c byte) byte {
 
 There is no automatic fall through, but cases can be presented in comma-separated lists.
 
-```
+```go
 func shouldEscape(c byte) bool {
     switch c {
     case ' ', '?', '&', '=', '#', '+', '%':
@@ -59,7 +59,7 @@ func shouldEscape(c byte) bool {
 }
 ```
 
-[See](https://golang.org/doc/effective_go.html#switch)
+[See more](https://golang.org/doc/effective_go.html#switch)
 
 ## For 
 - The `for` loop is similar to—but not the same as—C's. It unifies for and while and there is no do-while. There are three forms, only one of which has semicolons.
