@@ -6,27 +6,27 @@
 - There isn't a **float** type in `go`. There's a **float32** for numbers until 32 bits and **float64** for numbers until 64 bits.
 - In `go`you can omit type's declaration in the most part of variable's declaration. The golang can *infer* this type. E.g. 
 
-```
-    var personName = "John Doe"
+```go
+var personName = "John Doe"
 ```
 
 Instead:
 
-```
+```go
 var personName string = "John Doe"
 ```
 
 Or simply omit **var** too. As long as `short assignment statement` is used. E.g.
 
-````
+```go
 personName := "John Doe"
 appVersion := 1.1
 age := 28
-````
+```
 
 ## Flux control
 - `if` in *Golang* always expect a _`expression`_ with boolean return. E.g. 
-```
+```go
 if response.StatusCode == 200 {
     fmt.Println("The site its ok!")
 }
