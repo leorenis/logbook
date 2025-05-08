@@ -23,7 +23,7 @@ Firstly, let's start with these principles
 > - Unless explicitly silenced.
 > - In the face of ambiguity, refuse the temptation to guess.
 > - There should be one -- and preferably only one -- obvious way to do it.
-> - ~~Although that way may not be obvious at first unless you're Dutch~~.
+> - Although that way may not be obvious at first unless you're Dutch [^1].
 > - Now is better than never.
 > - Although never is often better than *right* now.
 > - If the implementation is hard to explain, it's a bad idea.
@@ -31,5 +31,7 @@ Firstly, let's start with these principles
 > - Namespaces are one honking great idea -- let's do more of those!
 > 
 > The Zen of Python, by Tim Peters
+
+[^1]: _The second part (“unless you're Dutch”) is a joke about Guido van Rossum, the creator of Python, who is Dutch._
 
 Reference: [Zen of python](https://pythonacademy.com.br/zen-of-python)
