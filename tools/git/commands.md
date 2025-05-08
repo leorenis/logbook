@@ -215,5 +215,6 @@ git push origin main
 - [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 - [Git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [How to use Git Flow and Become a Git Professional](https://www.youtube.com/watch?v=mZzmaC0pn1c)
+- [An interview with Git maninteiner](https://github.blog/open-source/git/celebrating-15-years-of-git-an-interview-with-git-maintainer-junio-hamano/)
 
 
