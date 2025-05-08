@@ -23,7 +23,7 @@ Firstly, let's start with these principles
 > - Unless explicitly silenced.
 > - In the face of ambiguity, refuse the temptation to guess.
 > - There should be one -- and preferably only one -- obvious way to do it.
-> - Although that way may not be obvious at first unless you're Dutch.
+> - ~~Although that way may not be obvious at first unless you're Dutch~~.
 > - Now is better than never.
 > - Although never is often better than *right* now.
 > - If the implementation is hard to explain, it's a bad idea.
