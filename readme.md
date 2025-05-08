@@ -1,6 +1,6 @@
 # Programming logbook
 
-* The place where I save notes and my journey and learnings about programming as well as related tools.
+* The place where I save notes, journey and learnings about programming as well as related tools.
 
 ## Concept
 
