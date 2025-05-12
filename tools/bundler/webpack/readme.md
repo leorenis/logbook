@@ -23,4 +23,4 @@ For a better understanding of the ideas behind module bundlers and how they work
 - [Docs](https://webpack.js.org/concepts/)
 - [Blogs](https://webpack.js.org/blog/)
 - [Under the hood](https://webpack.js.org/concepts/under-the-hood/)
-- [GitHub samples](https://github.com/leorenis/react-samples/tree/master/udmy-webpackone)
+- [GitHub samples](https://github.com/leorenis/react-samples/blob/master/udmy-webpack/README.md)
