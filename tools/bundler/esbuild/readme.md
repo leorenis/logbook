@@ -15,7 +15,7 @@ Major features:
 ### Install esbuild
 First, download and install the esbuild command locally. A prebuilt native executable can be installed using npm (which is automatically installed when you install the node JavaScript runtime):
 
-```
+```zsh
 npm install --save-exact --save-dev esbuild
 ```
 
