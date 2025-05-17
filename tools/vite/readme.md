@@ -12,7 +12,7 @@ First, download and install the esbuild command locally. A prebuilt native execu
 <details>
 <summary>Compatibility Note</summary>
 
-Vite requires `Node.js` version `18+` or `20+`. However, some templates require a higher `Node.js` version to work, please upgrade if your package manager warns about it.
+> Vite requires `Node.js` version `18+` or `20+`. However, some templates require a higher `Node.js` version to work, please upgrade if your package manager warns about it.
 </details>
 
 ```
