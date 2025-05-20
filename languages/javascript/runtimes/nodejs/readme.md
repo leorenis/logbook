@@ -38,3 +38,6 @@ server.listen(port, hostname, () => {
 ### Blog post archive
 - https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
 - https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick
+- https://blog.logrocket.com/event-loop-and-call-stack-js/
+- https://simonzhlx.github.io/js-engine/
+
