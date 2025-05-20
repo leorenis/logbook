@@ -4,3 +4,4 @@ V8 is Google’s open source high-performance JavaScript and WebAssembly engine,
 ### Blog post archive
 - https://v8.dev/blog
 - https://v8.dev/docs
+- https://nodejs.org/en/learn/getting-started/the-v8-javascript-engine
