@@ -54,7 +54,7 @@ The *workspace* directory contains the following sub directories at its root:
 
 In the root project, create a `go.mod` file, e.g: 
 
-```
+```zsh
 module gosamples
 
 go 1.24.1
