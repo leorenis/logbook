@@ -84,3 +84,7 @@ The VS Code Go extension provides rich language support for the Go programming l
 ## Credits
 
 from callicoder.com | [Read more here](https://www.callicoder.com/golang-installation-setup-gopath-workspace/).
+
+
+### See more
+- [Effective Go](https://go.dev/doc/effective_go.html)
