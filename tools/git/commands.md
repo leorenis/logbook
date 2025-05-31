@@ -210,6 +210,26 @@ git push origin main
 
 ```
 
+### Git Tag
+
+To list all tags:
+
+```bash
+git tag
+```
+
+To create a new tag:
+
+```zsh
+git tag -a -m 'docs: training tagging'
+```
+
+To push tag:
+
+```zsh
+git push origin --tags
+```
+
 ### See more
 - [Github docs](https://help.github.com/en/enterprise/2.13/user/articles/setting-your-commit-email-address-in-git)
 - [Merging vs. rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
