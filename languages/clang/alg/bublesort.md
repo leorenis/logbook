@@ -40,7 +40,5 @@ int main() {
 }
 ```
 
-
-
 ## See more
 - https://shorturl.at/E8I5e
