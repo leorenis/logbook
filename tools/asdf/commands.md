@@ -4,11 +4,11 @@ Manage multiple runtime versions with a single CLI tool
 ### More usefull commands exemples
 
 A helper command to print the OS, Shell and asdf debug information. Share this when making a bug report.
-```
+```zsh
 asdf info
 ```
 
-```
+```zsh
 asdf shimversions node
 ```
 
