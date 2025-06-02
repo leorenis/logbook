@@ -221,7 +221,7 @@ git tag
 To create a new tag:
 
 ```zsh
-git tag -a -m 'docs: training tagging'
+git tag -a '1.0.0' -m 'docs: training tagging'
 ```
 
 To push tag:
