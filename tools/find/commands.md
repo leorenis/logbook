@@ -1,5 +1,6 @@
 # Commands
 > Finds a file or directory by name.
+
 > Tip: `2>/dev/null` means redirect errors to 'buraco negro' from the system. Discards any error message.
 
 
