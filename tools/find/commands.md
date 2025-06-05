@@ -2,6 +2,20 @@
 > Finds a file or directory by name.
 
 
+Find files by type
+```
+find ~ -type f
+```
+
+```
+find ~ -type f,l -name "notebook*"
+```
+
+List just directories
+```
+find ~/Documents -type d
+```
+
 Find a single file by approximate name
 ```
 find / -iname "*log*txt" 2>/dev/null
@@ -11,7 +25,6 @@ Find starting from `/` in all file system based on `-type f` that means: only fi
 ```
 find / -type f -name "*.log"
 ```
-
 
 Find by content
 ```
