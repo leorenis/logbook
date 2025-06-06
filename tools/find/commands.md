@@ -2,7 +2,7 @@
 > Finds a file or directory by name.
 
 > [!TIP]
-> Tip: `2>/dev/null` means redirect errors to 'buraco negro' from the system. Discards any error message.
+> `2>/dev/null` means redirect errors to 'buraco negro' from the system. Discards any error message.
 
 
 Find files by type
