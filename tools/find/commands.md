@@ -20,7 +20,7 @@ find ~/Documents -type d
 ```
 
 Find a single file by approximate name
-```
+```zsh
 find / -iname "*log*txt" 2>/dev/null
 ```
 
