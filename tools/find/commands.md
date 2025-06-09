@@ -6,7 +6,7 @@
 
 
 Find files by type
-```
+```zsh
 find ~ -type f
 ```
 
