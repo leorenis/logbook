@@ -15,7 +15,7 @@ find ~ -type f,l -name "notebook*"
 ```
 
 List just directories
-```
+```zsh
 find ~/Documents -type d
 ```
 
