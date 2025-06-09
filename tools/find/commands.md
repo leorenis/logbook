@@ -10,7 +10,7 @@ Find files by type
 find ~ -type f
 ```
 
-```
+```zsh
 find ~ -type f,l -name "notebook*"
 ```
 
