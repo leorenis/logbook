@@ -25,7 +25,7 @@ find / -iname "*log*txt" 2>/dev/null
 ```
 
 Find starting from `/` in all file system based on `-type f` that means: only files and `-name "*.log"` represents any name before `.log` extension.
-```
+```zsh
 find / -type f -name "*.log"
 ```
 
