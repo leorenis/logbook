@@ -11,6 +11,23 @@ The following options are available:
 | `-i input_file`       | `--input=input_file`   | Lê a entrada de *input_file*. Padrão é stdin; `-` também representa stdin. |
 | `-o output_file`      | `--output=output_file` | Escreve a saída em *output_file*. Padrão é stdout; `-` também representa stdout. |
 
+### Utilities
+
+Encodes file using flag `-i` as input file 
+```
+base64 -i document.pdf -o document_base64.txt
+```
+
+Decodes file using flag `-i` as input file 
+```
+base64 -d -i document_base64.txt > validated.pdf
+```
+
+Encodes and validade using decode with the same command.
+```
+base64 -i document.pdf > document_base64.txt && base64 -d -i document_base64.txt > validated.pdf
+```
+
 
 ### See more
 - http://en.wikipedia.org/wiki/Base64
