@@ -14,7 +14,7 @@ The following options are available:
 ### Utilities
 
 Encodes file using flag `-i` as input file 
-```
+```zsh
 base64 -i document.pdf -o document_base64.txt
 ```
 
