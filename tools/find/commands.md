@@ -29,7 +29,7 @@ Find starting from `/` in all file system based on `-type f` that means: only fi
 find / -type f -name "*.log"
 ```
 
-Find by content
+Find by content.
 ```zsh
 find ~/Documents/ -name "*txt" -exec grep -Hi penguin {} \;
 ```
