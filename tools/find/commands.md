@@ -30,11 +30,11 @@ find / -type f -name "*.log"
 ```
 
 Find by content.
-```zsh
+```bash
 find ~/Documents/ -name "*txt" -exec grep -Hi penguin {} \;
 ```
 
-Limit listing results
+Limit listing results.
 ```
 find ~/Documents/ -maxdepth 1 -type d
 ```
