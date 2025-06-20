@@ -30,7 +30,7 @@ find / -type f -name "*.log"
 ```
 
 Find by content
-```bash
+```zsh
 find ~/Documents/ -name "*txt" -exec grep -Hi penguin {} \;
 ```
 
