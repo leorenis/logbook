@@ -35,7 +35,7 @@ find ~/Documents/ -name "*txt" -exec grep -Hi penguin {} \;
 ```
 
 Limit listing results.
-```zsh
+```bash
 find ~/Documents/ -maxdepth 1 -type d
 ```
 
