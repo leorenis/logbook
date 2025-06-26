@@ -16,7 +16,7 @@ curl --location 'https://mydomain.com:8000/api.php' \
 
 Get a webpage and store in a local file with a specific name:
 
-```
+```bash
 curl -o thatpage.html http://www.example.com/
 ```
 
@@ -31,5 +31,4 @@ curl -x my-proxy:888 ftp://ftp.example.com/README
 ### See more
 - https://curl.se/
 - https://curl.se/docs/tutorial.html
-
 
