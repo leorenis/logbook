@@ -23,7 +23,10 @@ Decodes file using flag `-i` as input file
 base64 -d -i document_base64.txt > validated.pdf
 ```
 
-
+Encodes and validade using decode with the same command.
+```zsh
+base64 -i document.pdf > document_base64.txt && base64 -d -i document_base64.txt > validated.pdf
+```
 
 
 ### See more
