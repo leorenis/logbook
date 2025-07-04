@@ -16,7 +16,7 @@ curl --location 'https://mydomain.com:8000/api.php' \
 
 Get a webpage and store in a local file with a specific name:
 
-```bash
+```zsh
 curl -o thatpage.html http://www.example.com/
 ```
 
