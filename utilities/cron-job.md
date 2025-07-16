@@ -4,16 +4,16 @@
 **Cron** is a time-based job scheduler commonly found in Unix-like operating systems. It allows users to schedule scripts or commands to run automatically at fixed intervals — such as every minute, hour, day, or on specific days of the week.
 
 
-# 🕒 Node-Cron Job Guide
+### 🕒 Node-Cron Job Guide
 
 This document provides a clear overview of how to use cron expressions with `node-cron` in a Node.js project, including examples, format details, and special characters.
 
-## 📦 What is `node-cron`?
+### 📦 What is `node-cron`?
 
 [`node-cron`](https://www.npmjs.com/package/node-cron) is a lightweight task scheduler in pure JavaScript for Node.js based on the traditional UNIX cron syntax — but with **six fields**, starting with **seconds**.
 
 
-## ⏱️ Cron Expression Format (6 Fields)
+### ⏱️ Cron Expression Format (6 Fields)
 
 ```cron
 ┌───────────── second (0 - 59)
@@ -27,7 +27,7 @@ This document provides a clear overview of how to use cron expressions with `nod
 ```
 
 
-## 🔍 Field Descriptions
+### 🔍 Field Descriptions
 | Field            | Position | Allowed Values | Description                            |
 | ---------------- | -------- | -------------- | -------------------------------------- |
 | **Seconds**      | 1st      | `0-59`         | The second the job runs                |
@@ -37,8 +37,20 @@ This document provides a clear overview of how to use cron expressions with `nod
 | **Month**        | 5th      | `1-12`         | The month (1 = January, 12 = December) |
 | **Day of Week**  | 6th      | `0-7`          | The day of the week (0 or 7 = Sunday)  |
 
+### 💡 Cron expression examples -
 
-### Cron expression examples - Quartz
+```js
+cron.schedule('0 0 2,14 * * *', async () => {
+  console.log('Running job at 2 AM and 2 PM daily');
+  await syncActiveUsers();
+});
+```
+
+**Explanation:**
+
+> Run the job every day at 02:00:00 and 14:00:00 (2 AM and 2 PM).
+
+### 💡Cron expression examples - Quartz
 
 | Expression                   | Meaning                                                              |
 |------------------------------|----------------------------------------------------------------------|
