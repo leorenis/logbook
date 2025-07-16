@@ -1,4 +1,44 @@
-# Cron expression examples - Quartz
+
+## 🕒 What is Cron?
+
+**Cron** is a time-based job scheduler commonly found in Unix-like operating systems. It allows users to schedule scripts or commands to run automatically at fixed intervals — such as every minute, hour, day, or on specific days of the week.
+
+
+# 🕒 Node-Cron Job Guide
+
+This document provides a clear overview of how to use cron expressions with `node-cron` in a Node.js project, including examples, format details, and special characters.
+
+## 📦 What is `node-cron`?
+
+[`node-cron`](https://www.npmjs.com/package/node-cron) is a lightweight task scheduler in pure JavaScript for Node.js based on the traditional UNIX cron syntax — but with **six fields**, starting with **seconds**.
+
+
+## ⏱️ Cron Expression Format (6 Fields)
+
+```cron
+┌───────────── second (0 - 59)
+│ ┌───────────── minute (0 - 59)
+│ │ ┌───────────── hour (0 - 23)
+│ │ │ ┌───────────── day of month (1 - 31)
+│ │ │ │ ┌───────────── month (1 - 12)
+│ │ │ │ │ ┌───────────── day of week (0 - 7) (Sunday = 0 or 7)
+│ │ │ │ │ │
+*  *  *  *  *  *
+```
+
+
+## 🔍 Field Descriptions
+| Field            | Position | Allowed Values | Description                            |
+| ---------------- | -------- | -------------- | -------------------------------------- |
+| **Seconds**      | 1st      | `0-59`         | The second the job runs                |
+| **Minutes**      | 2nd      | `0-59`         | The minute the job runs                |
+| **Hours**        | 3rd      | `0-23`         | The hour the job runs                  |
+| **Day of Month** | 4th      | `1-31`         | The day of the month                   |
+| **Month**        | 5th      | `1-12`         | The month (1 = January, 12 = December) |
+| **Day of Week**  | 6th      | `0-7`          | The day of the week (0 or 7 = Sunday)  |
+
+
+### Cron expression examples - Quartz
 
 | Expression                   | Meaning                                                              |
 |------------------------------|----------------------------------------------------------------------|
