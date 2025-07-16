@@ -37,7 +37,7 @@ This document provides a clear overview of how to use cron expressions with `nod
 | **Month**        | 5th      | `1-12`         | The month (1 = January, 12 = December) |
 | **Day of Week**  | 6th      | `0-7`          | The day of the week (0 or 7 = Sunday)  |
 
-### 💡 Cron expression examples -
+### 💡 Cron expression examples - cron-node
 
 ```js
 cron.schedule('0 0 2,14 * * *', async () => {
@@ -49,6 +49,17 @@ cron.schedule('0 0 2,14 * * *', async () => {
 **Explanation:**
 
 > Run the job every day at 02:00:00 and 14:00:00 (2 AM and 2 PM).
+
+### ⚙️ Special Characters
+
+| Symbol | Meaning                      | Example           |
+| ------ | ---------------------------- | ----------------- |
+| `*`    | Every value                  | `* * * * * *`     |
+| `,`    | List of values               | `2,14` = 2 and 14 |
+| `-`    | Range of values              | `1-5` = 1 to 5    |
+| `/`    | Step values (increments)     | `*/10` = every 10 |
+| `?`    | Not supported in `node-cron` | (Quartz only)     |
+
 
 ### 💡Cron expression examples - Quartz
 
@@ -114,4 +125,9 @@ cron.schedule('0 0 2,14 * * *', async () => {
 | `0 0 12 ? JAN,FEB,MAR,APR *` | Every day at noon in January, February, March and April              |
 | `0 0 12 ? 9-12 *`            | Every day at noon between September and December                     |
 
-Read more [freeformatter.com](https://www.freeformatter.com/cron-expression-generator-quartz.html)
+
+
+### 📘 See more resources
+- [freeformatter.com](https://www.freeformatter.com/cron-expression-generator-quartz.html)
+- [node-cron on npm](https://www.npmjs.com/package/node-cron)
+- [crontab.guru](https://crontab.guru) – online cron expression editor
