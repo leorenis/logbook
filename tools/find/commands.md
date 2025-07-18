@@ -46,7 +46,7 @@ find ~ -type f -empty
 
 Find files by age
 > The -mtime option allows you to limit a search to files older than, but also files newer than, some value times 24.
-```zsh
+```bash
 find /var/log -iname "*~" -o -iname "*log*" -mtime +30
 ```
 
