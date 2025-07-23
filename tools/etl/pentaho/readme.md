@@ -13,5 +13,5 @@ A solução consiste dos seguintes componentes:[3]
 - Pentaho for Apache Hadoop, também conhecido como Pentaho BI Suite, é a versão para Hadoop, uma plataforma de software em Java de computação distribuída voltada para clusters e processamento de grandes massas de dados.
 
 
-### See mote
+### See more
 - https://pt.wikipedia.org/wiki/Pentaho
