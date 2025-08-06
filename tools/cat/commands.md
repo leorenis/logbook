@@ -22,6 +22,23 @@ Append input to a file named *efs-1-setup.log* with superuser (root) permissions
 sudo bash -c "cat >> efs-1-setup.log"
 ```
 
+Concatenate multiple files into one
+```zsh
+cat file1.txt file2.txt > combined.txt
+```
+
+Show line numbers
+```zsh
+cat -n file.txt
+```
+
+
+Using with pipes
+> Sends the output of cat file.txt into grep to search for lines that contain "search term".
+```zsh
+cat file.txt | grep "search term"
+```
+
 
 ### See more
 - https://curl.se/
