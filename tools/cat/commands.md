@@ -60,4 +60,3 @@ For simple viewing of a large file, cat dumps the entire file at once. You might
 
 ### See more
 - https://guialinux.uniriotec.br/cat
-
