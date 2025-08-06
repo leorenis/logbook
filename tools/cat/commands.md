@@ -7,7 +7,17 @@ Displays the contents of `file.txt`.
 cat file.txt
 ```
 
-command designed to append input to a file named *efs-1-setup.log* with superuser (root) permissions.
+Create a new file (until you press Ctrl+D)
+```zsh
+cat > newfile.txt
+```
+
+Append to an existing file
+```zsh
+cat >> existingfile.txt
+```
+
+Append input to a file named *efs-1-setup.log* with superuser (root) permissions.
 ```zsh
 sudo bash -c "cat >> efs-1-setup.log"
 ```
