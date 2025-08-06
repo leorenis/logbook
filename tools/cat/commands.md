@@ -1,4 +1,4 @@
-# Commands
+## 🛠️ Commands
 > [!TIP]
 > cat utility reads files sequentially, writing them to the standard output. 
 
@@ -39,8 +39,25 @@ Using with pipes
 cat file.txt | grep "search term"
 ```
 
+### When NOT to Use cat
+For simple viewing of a large file, cat dumps the entire file at once. You might prefer:
+
+- `less file.txt` – view file one screen at a time.
+- `head file.txt` – view the first few lines.
+- `tail file.txt` – view the last few lines.
+
+
+### 🔍 Summary Table
+
+| Command                     | What it Does                   |
+| --------------------------- | ------------------------------ |
+| `cat file.txt`              | View file content              |
+| `cat > file.txt`            | Create/overwrite file          |
+| `cat >> file.txt`           | Append to file                 |
+| `cat file1 file2`           | Show multiple files            |
+| `cat file1 file2 > newfile` | Combine into new file          |
+| `cat -n file.txt`           | Show content with line numbers |
 
 ### See more
-- https://curl.se/
-- https://curl.se/docs/tutorial.html
+- https://guialinux.uniriotec.br/cat
 
