@@ -15,7 +15,6 @@ Nginx is a powerful, open-source web server, reverse proxy, load balancer, HTTP 
 - *NGINX App Protect WAF*: Protects applications and APIs from web application attacks. 
 - *NGINX Plus*: A commercial version with additional features and support. 
 
-
 ### See more
 - https://nginx.org/
 - https://aosabook.org/en/v2/nginx.html
