@@ -12,7 +12,7 @@ asdf info
 asdf shimversions node
 ```
 
-```
+```zsh
 asdf install nodejs 22.14.0
 ```
 
