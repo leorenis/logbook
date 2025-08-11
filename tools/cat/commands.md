@@ -35,7 +35,7 @@ cat -n file.txt
 
 Using with pipes
 > Sends the output of cat file.txt into grep to search for lines that contain "search term".
-```bash
+```zsh
 cat file.txt | grep "search term"
 ```
 
