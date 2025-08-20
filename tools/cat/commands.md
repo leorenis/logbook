@@ -12,8 +12,9 @@ Create a new file (until you press Ctrl+D)
 cat > newfile.txt
 ```
 
+
 Append to an existing file
-```zsh
+```bash
 cat >> existingfile.txt
 ```
 
