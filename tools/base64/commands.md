@@ -24,10 +24,9 @@ base64 -d -i document_base64.txt > validated.pdf
 ```
 
 Encodes and validade using decode with the same command.
-```zsh
+```bash
 base64 -i document.pdf > document_base64.txt && base64 -d -i document_base64.txt > validated.pdf
 ```
-
 
 ### See more
 - http://en.wikipedia.org/wiki/Base64
