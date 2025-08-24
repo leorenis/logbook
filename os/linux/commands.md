@@ -10,7 +10,7 @@ package to replace grep.
 
 - `sudo apt install silversearcher-ag` 
 
-```
+```bash
 $ ps aux | ag bash
  ```
 
