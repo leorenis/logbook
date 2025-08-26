@@ -24,7 +24,9 @@ $ ps aux | ag bash
 
  ## Development environment
 
- $ `sudo apt install build-essential libssl-dev exuberant-ctags ncurses-term ack-grep fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl default-jdk silversearcher-ag`
+ ```zsh
+sudo apt install build-essential libssl-dev exuberant-ctags ncurses-term ack-grep fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl default-jdk silversearcher-ag
+```
 
  ## ASDF Tool (asdf-vm)
 - Manage multiple runtime versions with a single CLI tool
