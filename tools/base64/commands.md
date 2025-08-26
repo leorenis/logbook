@@ -19,7 +19,7 @@ base64 -i document.pdf -o document_base64.txt
 ```
 
 Decodes file using flag `-i` as input file 
-```zsh
+```bash
 base64 -d -i document_base64.txt > validated.pdf
 ```
 
