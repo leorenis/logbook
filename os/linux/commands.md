@@ -61,8 +61,8 @@ $ sudo apt-get install \
 ```
 
 2. Add Docker’s official GPG key:
-```
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```zsh
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
 3. Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. [Learn about nightly and test channels](https://docs.docker.com/engine/install/).
