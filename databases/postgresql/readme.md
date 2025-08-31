@@ -4,3 +4,5 @@ PostgreSQL, ou Postgres, é um avançado sistema de gerenciamento de banco de da
 
 ### See more
 - https://www.postgresql.org/
+- https://brandur.org/postgres-atomicity#footnote-1-source
+- https://pt.stackoverflow.com/questions/101065/o-que-s%C3%A3o-os-%C3%ADndices-b-tree-hash-gist-e-gin
