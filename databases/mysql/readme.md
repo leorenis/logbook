@@ -5,6 +5,9 @@ O MariaDB é um sistema de gestão de bases de dados relacionais (RDBMS) de cód
 ## Important topics
 - CTE (Common Table Expression) ou JOIN com ROW_NUMBER() (se o banco suporta SQL com funções de janela — MySQL 8+, PostgreSQL, etc.);
 
+
+### Exemple
+
 ```sql
 WITH orders_by_month (mnth, yr, total) AS (
     SELECT MONTH(order_date), YEAR(order_date), SUM(total_price)
