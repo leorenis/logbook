@@ -22,3 +22,4 @@ ORDER BY mnth, yr;
 
 ### See more
 - https://www.mysql.com/
+- https://alura.com.br/artigos/data-science/cte-o-que-e-para-que-serve-sql

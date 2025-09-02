@@ -21,5 +21,6 @@ ORDER BY mnth, yr;
 
 ### See more
 - https://www.postgresql.org/
+- https://alura.com.br/artigos/data-science/cte-o-que-e-para-que-serve-sql
 - https://brandur.org/postgres-atomicity#footnote-1-source
 - https://pt.stackoverflow.com/questions/101065/o-que-s%C3%A3o-os-%C3%ADndices-b-tree-hash-gist-e-gin
