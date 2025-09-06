@@ -19,6 +19,7 @@ FROM orders_by_month
 ORDER BY mnth, yr;
 ```
 
+
 ### See more
 - https://www.postgresql.org/
 - https://alura.com.br/artigos/data-science/cte-o-que-e-para-que-serve-sql
