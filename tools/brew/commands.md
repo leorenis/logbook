@@ -19,6 +19,5 @@ Upgrade everything with:
 brew upgrade
 ```
 
-
 ## See more
 - https://docs.brew.sh/Manpage
