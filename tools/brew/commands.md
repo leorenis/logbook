@@ -6,7 +6,6 @@ First update all package definitions (formulae) and Homebrew itself:
 brew update
 ```
 
-
 You can now list which of your installed packages (kegs) are outdated with:
 
 ```bash
