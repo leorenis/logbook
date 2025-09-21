@@ -2,7 +2,7 @@
 
 First update all package definitions (formulae) and Homebrew itself:
 
-```zsh
+```bash
 brew update
 ```
 
@@ -20,4 +20,4 @@ brew upgrade
 
 ## See more
 - https://docs.brew.sh/Manpage
-- 
+  
