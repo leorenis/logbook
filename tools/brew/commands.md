@@ -8,7 +8,7 @@ brew update
 
 You can now list which of your installed packages (kegs) are outdated with:
 
-```bash
+```zsh
 brew outdated
 ```
 
