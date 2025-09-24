@@ -2,7 +2,7 @@
 
 First update all package definitions (formulae) and Homebrew itself:
 
-```bash
+```zsh
 brew update
 ```
 
