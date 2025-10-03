@@ -90,7 +90,6 @@ $ sudo apt update && sudo apt-get install docker-ce
 $ sudo usermod -aG docker $USER
 ```
 
-
 All environment variables
 `set | less`
 
