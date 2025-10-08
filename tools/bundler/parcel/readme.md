@@ -3,7 +3,6 @@ The zero configuration build tool for the web.
 
 Parcel combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production application.
 
-
 ### A build tool for the rest of us.
 
 Parcel starts with a great development experience, from starting a new project, to iterating and debugging, and shipping to production. No more fiddling with configuration, or spending hours to keep up with best practices – it just works!
