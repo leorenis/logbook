@@ -4,3 +4,4 @@ Azure is a cloud computing platform developed by Microsoft. It offers a range of
 
 ### See more
 - https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account?icid=azurefreeaccount
+
