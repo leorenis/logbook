@@ -85,5 +85,5 @@
   - Data warehousing applications
   - Distributed file systems
 
-
-Great website: https://instances.vantage.sh/
+Great website:
+- https://instances.vantage.sh/
