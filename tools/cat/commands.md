@@ -18,7 +18,7 @@ cat >> existingfile.txt
 ```
 
 Append input to a file named *efs-1-setup.log* with superuser (root) permissions.
-```sh
+```zsh
 sudo bash -c "cat >> efs-1-setup.log"
 ```
 
