@@ -13,7 +13,7 @@ cat > newfile.txt
 ```
 
 Append to an existing file
-```zsh
+```bash
 cat >> existingfile.txt
 ```
 
