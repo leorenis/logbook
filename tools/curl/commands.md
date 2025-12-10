@@ -27,7 +27,6 @@ Get an ftp file using an HTTP proxy named my-proxy that uses port 888:
 curl -x my-proxy:888 ftp://ftp.example.com/README
 ```
 
-
 ### See more
 - https://curl.se/
 - https://curl.se/docs/tutorial.html
