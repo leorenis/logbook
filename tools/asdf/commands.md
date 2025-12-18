@@ -18,7 +18,7 @@ asdf install nodejs 22.14.0
 
 or
 
-```
+```zsh
 asdf install java latest:adoptopenjdk-17
 ```
 
