@@ -6,7 +6,7 @@
 $ git config --global user.email "email@example.com"
 ```
 
-```
+```bash
 git config --global user.email
 email@example.com
 ```
