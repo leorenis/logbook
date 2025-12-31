@@ -7,7 +7,7 @@ Only the super-user may send signals to other users' processes.
 
 ### Killing a process in some port
 
-```bash
+```zsh
 kill $(lsof -t -i:3000)
 ```
 
