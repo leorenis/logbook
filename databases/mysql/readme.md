@@ -4,7 +4,7 @@ O `MariaDB` é um sistema de gestão de bases de dados relacionais `(RDBMS)` de 
 Sendo um fork (uma versão derivada) do MySQL, ele é conhecido pela sua compatibilidade, desempenho e pelo compromisso com a licença de código aberto, sendo amplamente adotado em diferentes distribuições Linux e em serviços de nuvem como AWS e Azure. 
 
 ## Important topics
-- CTE (`Common Table Expression`) ou JOIN com ROW_NUMBER() (se o banco suporta SQL com funções de janela — MySQL 8+, `PostgreSQL`, etc.);
+- CTE (`Common Table Expression`) ou JOIN com ROW_NUMBER() (se o banco suporta SQL com funções de janela — `MySQL 8+`, `PostgreSQL`, etc.);
 
 ### Exemple
 
